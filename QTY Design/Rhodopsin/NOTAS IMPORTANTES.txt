@@ -1,0 +1,1 @@
+retinal-tentative.mol2 does NOT include correct bond order info
