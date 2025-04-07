@@ -1,0 +1,11 @@
+Retinylidene proteins, i.e. retinal-binding proteins
+
+Pt.1
+How evolutionarily distinct are they?
+How much do the WT/WT WT/QTY QTY/QTY structures differ?
+
+Pt.2
+RMSD changes?
+active site/binding pocket residues variation?
+Residue orientation and interaction changes?
+Binding energy?

@@ -16,3 +16,5 @@
 *.cif*
 *.ndx*
 *.xvg*
+*.json*
+*.md*
