@@ -1,11 +1,46 @@
-Retinylidene proteins, i.e. retinal-binding proteins
+TENTATIVE TITLE: 
 
-Pt.1
-How evolutionarily distinct are they?
-How much do the WT/WT WT/QTY QTY/QTY structures differ?
+A structural and functional bioinformatics study of QTY-designed retinylidene proteins 
+(i.e., retinal-binding proteins)
 
-Pt.2
-RMSD changes?
-active site/binding pocket residues variation?
-Residue orientation and interaction changes?
-Binding energy?
+
+
+Pt.1 BACKGROUND
+
+How evolutionarily distinct are they?			  - 2h
+
+Function of each protein?						  - read papers
+
+Existing QTY studies							  - organize papers
+
+
+
+
+Pt.2 QTY DESIGN
+
+Monomer-trimer comparison?						  - 0.5h
+
+Surface hydrophobicity?							  - 1.5h
+
+Enhance 8-OPN figure?							  - VISUALIZE?
+
+
+
+Pt.3 MD SIMULATION
+
+Force field files?								  - URGENT!!!!!
+
+RMSD changes? What to measure?					  - MEASURE
+RMSF? Radius of gyration? 						  - MEASURE
+
+Secondary structure analysis (DSSP)?			  - MEASURE?
+
+Principle component analysis for motion?		  - MEASURE?
+
+active site/binding pocket residues variation?	  - VISUALIZE
+Cavity volume?									  - MEASURE?
+
+Binding energy?									  - HARD
+
+Residue orientation and interaction changes?	  - VISUALIZE and MEASURE
+Hydrogen bonds? gmx hbond						  - MEASURE?
