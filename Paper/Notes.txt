@@ -7,9 +7,9 @@ A structural and functional bioinformatics study of QTY-designed retinylidene pr
 
 Pt.1 BACKGROUND
 
-How evolutionarily distinct are they?			  - 2h
-
 Function of each protein?						  - read papers
+
+History of solubilizing studies?				  - read papers
 
 Existing QTY studies							  - organize papers
 
@@ -20,15 +20,18 @@ Pt.2 QTY DESIGN
 
 Monomer-trimer comparison?						  - 0.5h
 
-Surface hydrophobicity?							  - 1.5h
+Surface hydrophobicity?							  - 2h
 
-Enhance 8-OPN figure?							  - VISUALIZE?
+How evolutionarily distinct are they?			  - 2h
+Enhance 8-OPN figure?							  - 0.5h
 
 
 
 Pt.3 MD SIMULATION
 
-Force field files?								  - URGENT!!!!!
+Force field files?								  - URGENT!!!!!!!!!!!!!
+DO THE CGenFF PARAMETERS ACCOUNT FOR DELOCALIZATION?
+IS IT NECESSARY TO INTRODUCE THE NEW PARAMETERS?
 
 RMSD changes? What to measure?					  - MEASURE
 RMSF? Radius of gyration? 						  - MEASURE
