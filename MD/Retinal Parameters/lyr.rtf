@@ -1,0 +1,303 @@
+* Topology definitions for retinal with protonated Schiff-base link 
+* to lysine (LYR).
+*
+32 1
+
+! Use at your own risk!
+
+! Compiled by:
+
+! Jan Saam
+! Humboldt-University Berlin
+! Medizinische Fakultät (Charité)
+! Institute for Biochemisty
+! Monbijoustr. 2
+! 10117 Berlin
+! Germany
+! phone:  +49 30 450 528 449
+! email:  saam@charite.de
+
+
+! Atoms defined for Retinal and Schiff base in Bacteriorhodospin
+! and Rhodopsin (Mafalda Nina)
+MASS    464 HPL    1.00800 H ! Mafalda polyene Schiff base
+MASS    465 HPL1   1.00800 H ! Mafalda polyene Schiff base
+MASS    466 HAR    1.00800 H ! nonpolar H (idem HA for me SBH+ Mafalda )
+MASS    467 HCR    1.00800 H ! Mafalda polyene Schiff base
+MASS    468 CTR   12.01100 C ! tetrahedral  C (idem CT for SBH+ Mafalda)
+MASS    469 NCH1  14.00700 N ! protonated nitrogen Schiff base
+MASS    470 CR5   12.01100 C ! Aliphatic carbon SP2
+MASS    471 CR6   12.01100 C ! Aliphatic carbon SP2
+MASS    472 CR7   12.01100 C ! Aliphatic carbon SP2
+MASS    473 CR8   12.01100 C ! Aliphatic carbon SP2
+MASS    474 CR9   12.01100 C ! Aliphatic carbon SP2
+MASS    475 CR10  12.01100 C ! Aliphatic carbon SP2
+MASS    476 CR11  12.01100 C ! Aliphatic carbon SP2
+MASS    477 CR12  12.01100 C ! Aliphatic carbon SP2
+MASS    478 CR13  12.01100 C ! Aliphatic carbon SP2
+MASS    479 CR14  12.01100 C ! Aliphatic carbon SP2
+MASS    480 CR15  12.01100 C ! Aliphatic carbon SP2
+
+DECL -CA  
+DECL -C  
+DECL -O  
+DECL +N  
+DECL +HN  
+DECL +CA  
+DEFA FIRS NTER LAST CTER   
+AUTO ANGLES DIHE
+
+RESI LYR           1.00    ! PROTONATED SCHIFF BASE
+!
+! Charges taken from:
+! -------------------
+! Hayashi, S. and I. Ohmine. 2000. Proton transfer in
+! bacteriorhodopsin: Structure, excitation and IR spectra,
+! and potential energy surface analyses by an ab initio
+! QM/MM method. J. Phys. Chem. B 104:10678 10691.
+!
+! Hayashi, S., E. Tajkhorshid, E. Pebay-Peyroula, A. Royant,
+! E. M. Landau, J. Navarro, and K. Schulten. 2001.
+! Structural determinants of spectral tuning in retinal proteins
+! bacteriorhodopsin vs sensory rhodopsin II. J. Phys. Chem. B
+! 105:10124 10131.
+!
+GROUP 
+ATOM N    NH1    -0.47000  ! ALLOW PEP     |
+ATOM HN   H       0.31000  ! ALLOW PEP  HN-N
+ATOM CA   CT1     0.07000  ! ALLOW PEP     |
+ATOM HA   HB      0.09000  ! ALLOW PEP     |
+GROUP                      !            HA-CA-----|
+ATOM C    C       0.51000  ! ALLOW PEP     |      |
+ATOM O    O      -0.51000  ! ALLOW PEP     |      |
+GROUP                      !             O=C      |
+ATOM CB   CT2    -0.18000  ! ALLOW ALI     |      |
+ATOM HB1  HA      0.09000  ! ALLOW ALI        HB2-CB-HB1
+ATOM HB2  HA      0.09000  ! ALLOW ALI            |
+GROUP
+ATOM CG   CT2    -0.18000  ! ALLOW ALI            |
+ATOM HG1  HA      0.09000  ! ALLOW ALI        HG2-CG-HG1
+ATOM HG2  HA      0.09000  ! ALLOW ALI            |
+GROUP
+ATOM CD   CT2    -0.18000  ! ALLOW ALI            |
+ATOM HD1  HA      0.09000  ! ALLOW ALI        HD2-CD-HD1
+ATOM HD2  HA      0.09000  ! ALLOW ALI            |
+GROUP
+ATOM CE   CT2     0.340 !  0.01  !                |
+ATOM HE1  HA      0.050 !  0.20  !            HE2-CE-HE1
+ATOM HE2  HA      0.050 !  0.20  !                |
+ATOM N16  NCH1   -0.727 ! -0.65  !           H16-N16+
+ATOM H16  HCR     0.505 !  0.45  !                \\
+ATOM C15  CR15    0.362 !  0.25  !                C15-H15
+ATOM H15  HPL1    0.189 !  0.29  !                 |
+ATOM C14  CR14   -0.180 ! -0.18  !     H20B       C14-H14
+ATOM H14  HPL     0.180 !  0.20  !       |       //
+ATOM C13  CR13    0.131 !  0.13  !   H20A-C20 -- C13
+ATOM C20  CT3    -0.170 ! -0.17  !       |       |
+ATOM H20A HA      0.090 !  0.09  !      H20C     C12-H12
+ATOM H20B HA      0.090 !  0.09  !                \\
+ATOM H20C HA      0.090 !  0.09  !             H11-C11
+ATOM C12  CR12   -0.110 ! -0.10  !                |
+ATOM H12  HPL     0.110 !  0.10  !      H19B    C10-H10
+ATOM C11  CR11   -0.090 ! -0.10  !        |      //
+ATOM H11  HPL     0.090 !  0.10  !   H19A-C19 -- C9
+                         !                |     |
+GROUP                    !               H19C   C8-H8
+ATOM C10  CR10   -0.100 !  -0.10  !            //
+ATOM H10   HPL    0.100 !   0.10  !          H7-C7
+                         !                        |
+GROUP                    !                        C6
+ATOM C9    CR9     0.00  !                        |
+ATOM C19   CT3    -0.27  !                        |
+ATOM H19A  HA      0.09  !
+ATOM H19B  HA      0.09  !                        |
+ATOM H19C  HA      0.09  !                        |
+
+GROUP
+ATOM C8    CR8    -0.10  !                        |
+ATOM H8    HPL     0.10  !                        |
+ATOM C7    CR7    -0.10  !                        |
+ATOM H7    HPL     0.10  !                        \
+                        !                            H17A  H17B
+GROUP                   !                          C6    \ /
+ATOM C6    CR6     0.00 !                        //   \   C17-H17C
+                        !            H18B       //     \  /    H16B
+GROUP                   !              |       //       \/      |
+ATOM C5    CR5     0.00 !        H18A-C18 -- C5         C1 -- C16-H16A
+ATOM C18   CT3    -0.27 !              |      |          |      |
+ATOM H18A  HA      0.09 !            H18C     |          |    H16C
+ATOM H18B  HA      0.09 !                 H4A-C4        C2-H2A
+ATOM H18C  HA      0.09 !                    / \        / \
+                        !                 H4B   \      /   H2B
+GROUP                   !                        \    /
+ATOM C4    CT2    -0.20 !                          C3-H3A
+ATOM H4A   HA      0.10 !                            \
+ATOM H4B   HA      0.10 !                            H3B
+
+GROUP
+ATOM C3    CT2    -0.20
+ATOM H3A   HA      0.10
+ATOM H3B   HA      0.10
+
+GROUP
+ATOM C2    CT2    -0.20
+ATOM H2A   HA      0.10
+ATOM H2B   HA      0.10
+
+GROUP
+ATOM C1    CT3     0.00
+ATOM C16   CT3    -0.27
+ATOM H16A  HA      0.09
+ATOM H16B  HA      0.09
+ATOM H16C  HA      0.09
+
+GROUP
+ATOM C17   CT3    -0.27
+ATOM H17A  HA      0.09
+ATOM H17B  HA      0.09
+ATOM H17C  HA      0.09
+
+
+BOND CB CA CG CB CD CG CE CD N16 CE
+BOND N HN N CA O C C CA
+BOND C +N CA HA CB HB1 CB HB2 CG HG1
+BOND CG HG2 CD HD1 CD HD2 CE HE1 CE HE2
+BOND C1  C2      C1  C6      C1  C16     C1  C17
+BOND C2  C3      C2  H2A     C2  H2B
+BOND C3  C4      C3  H3A     C3  H3B
+BOND C4  C5      C4  H4A     C4  H4B
+BOND C5  C6      C5  C18
+BOND C6  C7
+BOND C7  C8      C7  H7
+BOND C8  C9      C8  H8
+BOND C9  C10     C9  C19
+BOND C10 C11     C10 H10
+BOND C11 C12     C11 H11
+BOND C12 C13     C12 H12
+BOND C13 C14     C13 C20
+BOND C14 C15     C14 H14
+BOND C15 N16     C15 H15     N16  H16
+BOND C16 H16A    C16 H16B    C16 H16C
+BOND C17 H17A    C17 H17B    C17 H17C
+BOND C18 H18A    C18 H18B    C18 H18C
+BOND C19 H19A    C19 H19B    C19 H19C
+BOND C20 H20A    C20 H20B    C20 H20C
+IMPR N -C CA HN C CA +N O
+IMPR C5   C6  C4  C18
+IMPR C6   C1  C5  C7
+IMPR C7   C8  C6  H7
+IMPR C8   C7  C9  H8
+IMPR C9   C10 C8  C19
+IMPR C10  C9  C11 H10
+IMPR C11  C12 C10 H11
+IMPR C12  C11 C13 H12
+IMPR C13  C14 C12 C20
+IMPR C14  C13 C15 H14
+IMPR C15 N16 C14 H15
+IMPR N16 CE C15 H16
+DONOR HN N
+DONOR H16 N16
+ACCEPTOR O C
+IC -C   CA   *N   HN    1.3482 123.5700  180.0000 115.1100  0.9988
+IC -C   N    CA   C     1.3482 123.5700  180.0000 107.2900  1.5187
+IC N    CA   C    +N    1.4504 107.2900  180.0000 117.2700  1.3478
+IC +N   CA   *C   O     1.3478 117.2700  180.0000 120.7900  1.2277
+IC CA   C    +N   +CA   1.5187 117.2700  180.0000 124.9100  1.4487
+IC N    C    *CA  CB    1.4504 107.2900  122.2300 111.3600  1.5568
+IC N    C    *CA  HA    1.4504 107.2900 -116.8800 107.3600  1.0833
+IC N    CA   CB   CG    1.4504 111.4700  180.0000 115.7600  1.5435
+IC CG   CA   *CB  HB1   1.5435 115.7600  120.9000 107.1100  1.1146
+IC CG   CA   *CB  HB2   1.5435 115.7600 -124.4800 108.9900  1.1131
+IC CA   CB   CG   CD    1.5568 115.7600  180.0000 113.2800  1.5397
+IC CD   CB   *CG  HG1   1.5397 113.2800  120.7400 109.1000  1.1138
+IC CD   CB   *CG  HG2   1.5397 113.2800 -122.3400 108.9900  1.1143
+IC CB   CG   CD   CE    1.5435 113.2800  180.0000 112.3300  1.5350
+IC CE   CG   *CD  HD1   1.5350 112.3300  122.2500 108.4100  1.1141
+IC CE   CG   *CD  HD2   1.5350 112.3300 -121.5900 108.1300  1.1146
+IC CG   CD   CE   N16    1.5397 112.3300  180.0000 110.4600  1.4604
+IC N16   CD   *CE  HE1   1.4604 110.4600  119.9100 110.5100  1.1128
+IC N16   CD   *CE  HE2   1.4604 110.4600 -120.0200 110.5700  1.1123
+
+IC CD   CE   N16   H16  1.53  109 103.66  120  1.10
+IC CD   CE   N16   C15  1.53  109 -76.44  120  1.35
+IC CE   N16   C15  C14  1.46  120 180.00  120  1.10
+IC CE   N16   C15  H15  1.46  120   0.00  120  1.10
+IC  C1   C2   C3   C4   1.58  0.00 0.00 0.00 1.58
+IC  C2   C3   C4   C5   1.58  0.00 0.00 0.00 0.0000
+IC  C2   C1   C6   C5   1.58  0.00 0.00 0.00 0.0000
+IC  C3   C4   C5   C6   1.58  0.00 0.00 0.00 0.0000
+IC  C3   C4   C5   C18  1.58  0.00 0.00 0.00 0.0000
+IC  C3   C2   C1   C6   1.58  0.00 0.00 0.00 0.0000
+IC  C3   C2   C1   C16  1.58  0.00 0.00 0.00 0.0000
+IC  C3   C2   C1   C17  1.58  0.00 0.00 0.00 0.0000
+IC  C4   C5   C6   C1   1.58  0.00 0.00 0.00 0.0000
+IC  C5   C6   C1   C2   1.58  0.00 0.00 0.00 0.0000
+IC  C5   C6   C1   C17  1.58  0.00 0.00 0.00 0.0000
+IC  C5   C6   C1   C16  1.58  0.00 0.00 0.00 0.0000
+IC  C7   C6   C1   C17  1.58  0.00 0.00 0.00 0.0000
+IC  C7   C6   C1   C16  1.58  0.00 0.00 0.00 0.0000
+IC  C2   C1   C6   C7   1.58  0.00 0.00 0.00 0.0000
+IC  C4   C5   C6   C7   1.58  0.00 0.00 0.00 0.0000
+IC  C1   C6   C7   C8   1.58  0.00 0.00 0.00 0.0000
+IC  C5   C6   C7   C8   1.58  0.00 0.00   120   1.58
+IC  C6   C7   C8   C9   1.58   120  180   120  1.58
+IC  C7   C8  C9   C10   1.58   120  180   120  1.58
+IC  C8   C9  C10  C11   1.58   120  180   120  1.58
+IC  C9   C10 C11  C12   1.58   120  180   120  1.58
+IC  C10  C11 C12  C13   1.58   120  0.00  120  1.58  ! cis
+IC  C11  C12 C13  C14   1.58   120  180   120  1.58
+IC  C12  C13 C14  C15   1.58   120  180   120  1.58
+IC  C13  C14 C15  N16   1.58   120  180   120  1.35
+IC  C7   C8  C9   C19   1.58   120  0.00  120  1.58
+IC  C19  C9  C10  C11   1.58   120  0.00  120  1.58
+IC  C19  C9  C8   C7    1.58   120  0.00  120  1.58
+IC  C20  C13 C12  C11   1.58   120  0.00  120  1.58
+IC  C20  C13 C14  C15   1.58   120  0.00  120  1.58
+! all hydrogen atoms
+!IC  H14  C14 C15  N16   1.10  120    0.00  120  1.35
+IC  C15   CE  *N16  H16  1.58  120  180.00  120  1.10
+!IC  H14  C14 C15  H15   1.10  120  180.00  120  1.10
+!IC  C14  N16  *C15  H15  1.58  120  180.00  120  1.10 ! let psfgen guess this one
+IC  H14  C14 C13  C20   1.10  120  180.00  120  1.58
+!IC  H14  C14 C13  C12   1.10  120    0.00  120  1.58
+IC  C15  C13  *C14  H14  1.58  120  180.00  120  1.10
+IC  C14  C13 C20  H20A  1.58  120  180.00  109  1.10
+IC  C14  C13 C20  H20B  1.58  120   60.00  109  1.10
+IC  C14  C13 C20  H20C  1.58  120  -60.00  109  1.10
+!IC  C20  C13 C12  H12   1.58  120  180.00  109  1.10
+!IC  H12  C12 C11  C10   1.10  120  180.00  120  1.58
+IC  C13  C11  *C12  H12   1.58  120  180.00  120  1.10
+!IC  H11  C11 C10  C9    1.10  120     0.00  120  1.58
+!IC  H11  *C11 C12  C10    1.10  120  180.00  120  1.58
+IC  C10  C12 *C11  H11    1.58  120  180.00  120  1.10
+!IC  H10  C10 C9   C19   1.10  120  180.00  120  1.58
+!IC  H10  C10 C9   C8    1.10  120    0.00  120  1.58
+IC  C9  C11  *C10  H10  1.58  120   180.00 120  1.10
+IC  C10  C9  C19  H19A  1.58  120  180.00  109  1.10
+IC  C10  C9  C19  H19B  1.58  120   60.00  109  1.10
+IC  C10  C9  C19  H19C  1.58  120  -60.00  109  1.10
+!IC  C10  C9  C8  H8     1.58  120    0.00  120  1.10
+!IC  H8   C8  C7   C6    1.10  120    0.00  120  1.58
+IC  C7   C9  *C8  H8     1.58  120  180.00  120  1.10
+!IC  H7   C7  C6   C1    1.10  120    0.00  120  1.58
+!IC  H7   C7  C6   C5    1.10  120  180.00  120  1.58
+!IC  H7   C7  C8   C9    1.10  120    0.00  120  1.58
+IC  C6   C8  *C7  H7    1.58  120  180.00  120  1.10
+IC  C6   C1  C17  H17A  1.58  125  180.00  109  1.10
+IC  C6   C1  C17  H17B  1.58  0.00  60.00  109  1.10
+IC  C6   C1  C17  H17C  1.58  0.00 -60.00  109  1.10
+IC  C6   C1  C16  H16A  1.58  0.00 180.00  109  1.10
+IC  C6   C1  C16  H16B  1.58  0.00  60.00  109  1.10
+IC  C6   C1  C16  H16C  1.58  111.68 -60.00  109  1.10
+IC  C17  C1  C2   H2A   1.58  100.40 -60.00 109  1.10
+IC  C17  C1  C2   H2B   1.58  100.40  60.00 109  1.10
+IC  C1   C2  C3   H3A   1.58  113.17 -60.00 109  1.10
+IC  C1   C2  C3   H3B   1.58  113.17 180.00 109  1.10
+IC  H4A  C4  C5   C18   1.10  109  -20.00 112.17 1.58
+IC  H4B  C4  C5   C18   1.10  109  100.00 112.17 1.58
+IC  C4   C5  C18  H18A  1.58  112.17  180.00  109  1.10
+IC  C4   C5  C18  H18B  1.58  112.17  -60.00  109  1.10
+IC  C4   C5  C18  H18C  1.58  112.17   60.00  109  1.10
+!
+!
+PATCH FIRST NONE LAST NONE
