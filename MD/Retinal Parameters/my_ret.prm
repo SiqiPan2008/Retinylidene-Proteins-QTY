@@ -1,256 +1,126 @@
-* Parameter file for Retinal protonated schiff base / lysine bound retinal (LYR)
-* Converted from AMBER format parameter file (provided by Shig Hayashi) for retinal
-* in Bacteriorhodopsin.
-*
+[ bondtypes ]
+;      i        j  func           b0           kb
+    NCH1      CT2     1   0.14900000       340.00
+    NCH1      HCR     1   0.10000000       430.00
+    NCH1     CR15     1   0.13200000       490.00
+       
+    CR15     HPL1     1   0.10700000       370.00
+    CR15     CR14     1   0.13700000       430.00
+    CR14      HPL     1   0.10700000       370.00
+    CR14     CR13     1   0.14000000       550.00
+    CR13      CT3     1   0.15200000       320.00
+    CR13     CR12     1   0.14000000       430.00
+    CR12      HPL     1   0.10700000       370.00
+    CR12     CR11     1   0.13700000       550.00
+    CR11      HPL     1   0.10700000       370.00
+    CR11     CR10     1   0.14100000       430.00
+    CR10      HPL     1   0.10700000       370.00
+    CR10      CR9     1   0.13700000       550.00
+     CR9      CT3     1   0.15200000       320.00
+     CR9      CR8     1   0.14500000       430.00
+     CR8      HPL     1   0.10700000       370.00
+     CR8      CR7     1   0.13400000       550.00
+     CR7      HPL     1   0.10700000       370.00
+     CR7      CR6     1   0.14700000       430.00
+     CR6      CT3     1   0.15400000       320.00
+     CR6      CR5     1   0.13400000       550.00
+     CR5      CT3     1   0.15200000       320.00
+     CR5      CT2     1   0.15200000       320.00
+CHANGE UNIT FOR KB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-! Use at your own risk!
-! Compiled by:
+[ angletypes ]
+;      i        j        k  func       theta0       ktheta          ub0          kub
+     CT2      CT2     NCH1     5   111.200000    80.000000   0.00000000         0.00
+     HCR     NCH1      CT2     5   118.400000    35.000000   0.00000000         0.00
+     CT2     NCH1     CR15     5   123.200000    50.000000   0.00000000         0.00
+    CR15     NCH1      HCR     5   120.000000    35.000000   0.00000000         0.00
+      HA      CT2     NCH1     5   109.500000    50.000000   0.00000000         0.00
+    NCH1     CR15     HPL1     5   119.100000    35.000000   0.00000000         0.00
+    NCH1     CR15     CR14     5   122.900000    95.000000   0.00000000         0.00
+    CR15     CR14      HPL     5   119.700000    35.000000   0.00000000         0.00
+    CR14     CR15     HPL1     5   119.700000    35.000000   0.00000000         0.00
+    CR15     CR14     CR13     5   122.900000    95.000000   0.00000000         0.00
+    CR14     CR13      CT3     5   119.700000    70.000000   0.00000000         0.00
+    CR13     CR14      HPL     5   119.700000    35.000000   0.00000000         0.00
+    CR13      CT3       HA     5   109.500000    50.000000   0.00000000         0.00
+    CR14     CR13     CR12     5   122.900000    95.000000   0.00000000         0.00
+    CR13     CR12      HPL     5   119.700000    35.000000   0.00000000         0.00
+    CR12     CR13      CT3     5   119.700000    70.000000   0.00000000         0.00
+    CR13     CR12     CR11     5   122.900000    95.000000   0.00000000         0.00
+    CR12     CR11      HPL     5   119.700000    35.000000   0.00000000         0.00
+    CR11     CR12      HPL     5   119.700000    35.000000   0.00000000         0.00
+    CR12     CR11     CR10     5   122.900000    95.000000   0.00000000         0.00
+    CR11     CR10      HPL     5   119.700000    35.000000   0.00000000         0.00
+    CR10     CR11      HPL     5   119.700000    35.000000   0.00000000         0.00
+    CR11     CR10      CR9     5   122.900000    95.000000   0.00000000         0.00
+    CR10      CR9      CT3     5   119.700000    70.000000   0.00000000         0.00
+     CR9      CT3       HA     5   109.500000    50.000000   0.00000000         0.00
+     CR9     CR10      HPL     5   119.700000    35.000000   0.00000000         0.00
+    CR10      CR9      CR8     5   122.900000    95.000000   0.00000000         0.00
+     CR9      CR8      HPL     5   119.700000    35.000000   0.00000000         0.00
+     CR8      CR9      CT3     5   119.700000    70.000000   0.00000000         0.00
+     CR9      CR8      CR7     5   122.900000    95.000000   0.00000000         0.00
+     CR8      CR7      HPL     5   119.700000    35.000000   0.00000000         0.00
+     CR7      CR8      HPL     5   119.700000    35.000000   0.00000000         0.00
+     CR8      CR7      CR6     5   122.900000    95.000000   0.00000000         0.00
+     CR7      CR6      CT3     5   119.700000    70.000000   0.00000000         0.00
+     CR6      CR7      HPL     5   119.700000    35.000000   0.00000000         0.00
+     CR7      CR6      CR5     5   122.900000    95.000000   0.00000000         0.00
+     CR6      CR5      CT3     5   119.700000    70.000000   0.00000000         0.00
+     CR6      CR5      CT2     5   119.700000    70.000000   0.00000000         0.00
+     CT3      CR5      CT2     5   119.700000    70.000000   0.00000000         0.00
+     CR5      CT2       HA     5   109.500000    50.000000   0.00000000         0.00
+     CR5      CT3       HA     5   109.500000    50.000000   0.00000000         0.00
+     CR6      CT3      CT2     5   111.100000    63.000000   0.00000000         0.00
+     CR6      CT3      CT3     5   111.100000    63.000000   0.00000000         0.00
+     CR5      CT2      CT2     5   111.100000    63.000000   0.00000000         0.00
+     CR5      CR6      CT3     5   119.700000    70.000000   0.00000000         0.00
+     CT3      CT3      CT3     5   109.500000    63.000000   0.00000000         0.00
+     CT2      CT3      CT3     5   109.500000    63.000000   0.00000000         0.00
+CHANGE UNIT FOR KTHETA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-! Jan Saam
-! Humboldt-University Berlin
-! Medizinische Fakultät (Charité)
-! Institute for Biochemisty
-! Monbijoustr. 2
-! 10117 Berlin
-! Germany
-! phone:  +49 30 450 528 449
-! email:  saam@charite.de
+[ dihedraltypes ]
+;      i        j        k        l  func         phi0         kphi  mult
+       X      CT2     NCH1        X     2     0.000000     0.000000     2      
+       X     NCH1     CR15        X     2   180.000000     3.600000     2
+       X     CR15     CR14        X     2   180.000000     3.800000     2
+ 
+       X     CR14     CR13        X     2   180.000000     3.680000     2
+       X      CT3     CR13        X     2   180.000000     0.000000     2
+       X     CR13     CR12        X     2   180.000000     3.540000     2
+       X     CR12     CR11        X     2   180.000000     4.385000     2
+       X     CR11     CR10        X     2   180.000000     2.810000     2
+       X     CR10      CR9        X     2   180.000000     4.660000     2
+       X      CT3      CR9        X     2   180.000000     0.000000     2
+       X      CR9      CR8        X     2   180.000000     2.130000     2
+       X      CR8      CR7        X     2   180.000000     5.000000     2
+       X      CR7      CR6        X     2   180.000000     1.405000     2
+       X      CR6      CR5        X     2   180.000000     5.000000     2
+       X      CT2      CR5        X     2   180.000000     0.000000     2
+       X      CT3      CR5        X     2   180.000000     0.000000     2
+       X      CT3      CR6        X     2   180.000000     0.000000     2
+CHANGE UNIT FOR KPHI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+[ dihedraltypes ]
+; 'improper' dihedrals 
+;      i        j        k        l  func         phi0         kphi
+    CR15     CR14     NCH1     HPL1     2     0.000000   100.000000
+    CR14     CR13     CR15      HPL     2     0.000000   100.000000
+    CR13     CR12     CR14      CT3     2     0.000000   100.000000
+    CR12     CR11     CR13      HPL     2     0.000000   100.000000
+    CR11     CR10     CR12      HPL     2     0.000000   100.000000
+    CR10      CR9     CR11      HPL     2     0.000000   100.000000
+     CR9      CR8     CR10      CT3     2     0.000000   100.000000
+     CR8      CR7      CR9      HPL     2     0.000000   100.000000
+     CR7      CR6      CR8      HPL     2     0.000000   100.000000
+     CR6      CR5      CR7      CT3     2     0.000000   100.000000
+     CR5      CR6      CT2      CT3     2     0.000000   100.000000
+     CR6      CT3      CR5      CR7     2     0.000000   100.000000
+     CR7      CR8      CR6      HPL     2     0.000000   100.000000
+     CR9     CR10      CR8      CT3     2     0.000000   100.000000
+    CR11     CR12     CR10      HPL     2     0.000000   100.000000
+    CR13     CR14     CR12      CT3     2     0.000000   100.000000
 
-
-!!!! Please acknowledge ALL 5 publications: !!!!
-
-! Equilibrium bondlengths and angles:
-! ------------------------------------
-! Tajkhorshid, E., B. Paizs, and S. Suhai. 1997. Conformational effects on the proton
-! affinity of the schiff base in bacteriorhodopsin: a density functional study. JPCB 101:
-! 8021-8028.
-!
-! Tajkhorshid, E. and S. Suhai. 1999. Influence of the methyl groups on the structure, charge
-! distribution and proton affinity of the retinal schiff base. JPCB 103: 5581-5590.
-
-! Dihedral parameters:
-! --------------------
-! Tajkhorshid, E., J. Baudry, K. Schulten, and S. Suhai. 2000. Molecular dynamics study of
-! the nature and origin of retinal s twisted structure in bacteriorhodopsin.
-! Biophys. J. 78:683-693.
-
-! Lennard Jones parameters and charges (NONBONDED section) (ALSO NOTE ALTERNATIVE DIHEDRAL PARAMETERS IN FOLLOWING PUBLICATIONS)
-! --------------------------------------------
-! M. Nina et al. (1995), Biophys. J. 68 : 25-39
-!
-! J. Baudry, S. Crouzy, B. Roux and J.C. Smith. Quantum chemical and free energy simulation analysis of retinal 
-! conformational energetics. 
-! J. Chem. Info. Comput. Sci., 37(1997) 1018-1024 . 
-
-
-! Atoms defined for Retinal and Schiff base in Bacteriorhodospin
-! and Rhodopsin (Mafalda Nina)
-ATOM
-MASS    464 HPL    1.00800 H ! Mafalda polyene Schiff base
-MASS    465 HPL1   1.00800 H ! Mafalda polyene Schiff base
-MASS    466 HAR    1.00800 H ! nonpolar H (idem HA for me SBH+ Mafalda )
-MASS    467 HCR    1.00800 H ! Mafalda polyene Schiff base
-MASS    468 CTR   12.01100 C ! tetrahedral  C (idem CT for SBH+ Mafalda)
-MASS    469 NCH1  14.00700 N ! protonated nitrogen Schiff base
-MASS    470 CR5   12.01100 C ! Aliphatic carbon SP2
-MASS    471 CR6   12.01100 C ! Aliphatic carbon SP2
-MASS    472 CR7   12.01100 C ! Aliphatic carbon SP2
-MASS    473 CR8   12.01100 C ! Aliphatic carbon SP2
-MASS    474 CR9   12.01100 C ! Aliphatic carbon SP2
-MASS    475 CR10  12.01100 C ! Aliphatic carbon SP2
-MASS    476 CR11  12.01100 C ! Aliphatic carbon SP2
-MASS    477 CR12  12.01100 C ! Aliphatic carbon SP2
-MASS    478 CR13  12.01100 C ! Aliphatic carbon SP2
-MASS    479 CR14  12.01100 C ! Aliphatic carbon SP2
-MASS    480 CR15  12.01100 C ! Aliphatic carbon SP2
-
-BONDS
-NCH1 CT2     340.00      1.49
-NCH1 HCR     430.00      1.00
-NCH1 CR15    490.00      1.32
-
-CR15 HPL1    370.00      1.07
-CR15 CR14    430.00      1.37
-CR14 HPL     370.00      1.07
-CR14 CR13    550.00      1.40
-CR13 CT3     320.00      1.52
-CR13 CR12    430.00      1.40
-CR12 HPL     370.00      1.07
-CR12 CR11    550.00      1.37
-CR11 HPL     370.00      1.07
-CR11 CR10    430.00      1.41
-CR10 HPL     370.00      1.07
-CR10 CR9     550.00      1.37
-CR9  CT3     320.00      1.52
-CR9  CR8     430.00      1.45
-CR8  HPL     370.00      1.07
-CR8  CR7     550.00      1.34
-CR7  HPL     370.00      1.07
-CR7  CR6     430.00      1.47
-CR6  CT3     320.00      1.54
-CR6  CR5     550.00      1.34
-CR5  CT3     320.00      1.52
-CR5  CT2     320.00      1.52
-
-ANGLES
-CT2   CT2   NCH1     80.00    111.20
-HCR   NCH1  CT2      35.00    118.40
-CT2   NCH1  CR15     50.00    123.20
-CR15  NCH1  HCR      35.00    120.00
-HA    CT2   NCH1     50.00    109.50
-NCH1  CR15  HPL1     35.00    119.10
-NCH1  CR15  CR14     95.00    122.90
-CR15  CR14  HPL      35.00    119.70
-CR14  CR15  HPL1     35.00    119.70
-CR15  CR14  CR13     95.00    122.90
-CR14  CR13  CT3      70.00    119.70
-CR13  CR14  HPL      35.00    119.70
-CR13  CT3   HA       50.00    109.50
-CR14  CR13  CR12     95.00    122.90
-CR13  CR12  HPL      35.00    119.70
-CR12  CR13  CT3      70.00    119.70
-CR13  CR12  CR11     95.00    122.90
-CR12  CR11  HPL      35.00    119.70
-CR11  CR12  HPL      35.00    119.70
-CR12  CR11  CR10     95.00    122.90
-CR11  CR10  HPL      35.00    119.70
-CR10  CR11  HPL      35.00    119.70
-CR11  CR10  CR9      95.00    122.90
-CR10  CR9   CT3      70.00    119.70
-CR9   CT3   HA       50.00    109.50
-CR9   CR10  HPL      35.00    119.70
-CR10  CR9   CR8      95.00    122.90
-CR9   CR8   HPL      35.00    119.70
-CR8   CR9   CT3      70.00    119.70
-CR9   CR8   CR7      95.00    122.90
-CR8   CR7   HPL      35.00    119.70
-CR7   CR8   HPL      35.00    119.70
-CR8   CR7   CR6      95.00    122.90
-CR7   CR6   CT3      70.00    119.70
-CR6   CR7   HPL      35.00    119.70
-CR7   CR6   CR5      95.00    122.90
-CR6   CR5   CT3      70.00    119.70 ! ?
-CR6   CR5   CT2      70.00    119.70 ! ?
-CT3   CR5   CT2      70.00    119.70
-CR5   CT2   HA       50.00    109.50 ! ?
-CR5   CT3   HA       50.00    109.50 ! ?
-CR6   CT3   CT2      63.00    111.10 ! ?
-CR6   CT3   CT3      63.00    111.10 ! ?
-CR5   CT2   CT2      63.00    111.10
-CR5   CR6   CT3      70.00    119.70
-CT3   CT3   CT3      63.00    109.50 ! reg. tetrahedron, force
-CT2   CT3   CT3      63.00    109.50 ! constant from CR5-CT3-CT3
-
-DIHEDRALS
-X    CT2  NCH1 X                0.0       2        0.0
-X    NCH1 CR15 X                3.6       2      180.0  ! double
-X    CR15 CR14 X                3.8       2      180.0
-
-X    CR14 CR13 X                3.68      2      180.0  ! double
-X    CT3  CR13 X                0.0       2      180.0
-X    CR13 CR12 X                3.54      2      180.0
-X    CR12 CR11 X                4.385     2      180.0  ! double
-X    CR11 CR10 X                2.81      2      180.0
-X    CR10 CR9  X                4.66      2      180.0  ! double
-X    CT3  CR9  X                0.0       2      180.0
-X    CR9  CR8  X                2.13      2      180.0
-X    CR8  CR7  X                5.0       2      180.0  ! double
-X    CR7  CR6  X                1.405     2      180.0
-X    CR6  CR5  X                5.0       2      180.0  ! double
-X    CT2  CR5  X                0.0       2      180.0  ! ?
-X    CT3  CR5  X                0.0       2      180.0  ! ?
-X    CT3  CR6  X                0.0       2      180.0
-
-IMPROPER
-!
-!V(improper) = Kpsi(psi - psi0)**2
-!
-!Kpsi: kcal/mole/rad**2
-!psi0: degrees
-!note that the second column of numbers (0) is ignored
-!
-!atom types           Kpsi                   psi0
-!
-
-! Retinal Protonated Schiff base
-! ******************************
-!
-! impr parameters
-!
-! From Nicolas :
-! CPB   C    CPB  CPA      90.00     0      0.00
-! similar to CR8   CT  CR8  CR7        ....
-! CPM3  CPA   CPA  HA       29.40     0      0.00
-! similar to CR11 HPL  CR10  CR12 for example  .
-
-! nouvel essai improper redefinis
-CR15  CR14  NCH1  HPL1    100.00     0  0.000
-CR14  CR13  CR15  HPL     100.00     0  0.000
-CR13  CR12  CR14  CT3     100.00     0  0.000
-CR12  CR11  CR13  HPL     100.00     0  0.000
-CR11  CR10  CR12  HPL     100.00     0  0.000
-CR10  CR9   CR11  HPL     100.00     0  0.000
-CR9   CR8   CR10  CT3     100.00     0  0.00
-CR8   CR7   CR9   HPL     100.00     0  0.00
-CR7   CR6   CR8   HPL     100.00     0  0.00
-CR6   CR5   CR7   CT3     100.00     0  0.00
-CR5   CR6   CT2   CT3     100.00     0  0.00
-CR6   CT3   CR5   CR7     100.00     0  0.00
-CR7   CR8   CR6   HPL     100.00     0  0.00
-CR9   CR10  CR8   CT3     100.00     0  0.00
-CR11  CR12  CR10  HPL     100.00     0  0.00
-CR13  CR14  CR12  CT3     100.00     0  0.00
-
-!
-! Shiff base
-!
-CR15 NCH1  CR14 HPL1   100.000     0  0.000
-NCH1  CT2  CR15 HCR    45.000     0  0.000 ! AMIDES PROTON OOP
-
-
-NONBONDED nbxmod  5 atom cdiel shift vatom vdistance vswitch -
-cutnb 14.0 ctofnb 12.0 ctonnb 10.0 eps 1.0 e14fac 1.0 wmin 1.5
-                !adm jr., 5/08/91, suggested cutoff scheme
-!
-!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
-!
-!epsilon: kcal/mole, Eps,i,j = sqrt(eps,i * eps,j)
-!Rmin/2: A, Rmin,i,j = Rmin/2,i + Rmin/2,j
-!
-!atom  ignored    epsilon      Rmin/2   ignored   eps,1-4       Rmin/2,1-4
-!
-
-!NONBON
-!  CR15        1.9080    0.0860
-!  CR14        1.9080    0.0860
-!  CR13        1.9080    0.0860
-!  CR12        1.9080    0.0860
-!  CR11        1.9080    0.0860
-!  CR10        1.9080    0.0860
-!  CR9         1.9080    0.0860
-!  CR8         1.9080    0.0860
-!  CR7         1.9080    0.0860
-!  CR6         1.9080    0.0860
-!  CR5         1.9080    0.0860
-!  NCH1        1.8240    0.1700
-!  HCR         0.6000    0.0157
-!  OW        1.7825    0.2941
-
-! Van der Waals parameters from Mafalda Nina et al. (1995),
-! Biophys. J. 68 : 25-39
-
-CTR    0.000000  -0.156200     1.800000 ! Retinal Schiff base
-                ! methyl group ( idem CT ) Mafalda
-CR*    0.000000  -0.110000  2.100000  0.000 -0.110000 1.600000 !last 2  v14
-                ! RETINAL from ab initio calc's (J. Baudry) Sept. 1996
-HAR    0.000000  -0.007800     1.468000 !  Retinal Schiff base
-                !  methyl group E-N-methyl-2-propenylidenimine
-HCR    0.000000  -0.046    0.224500
-                ! RETINAL from ab initio calc's (Mafalda)
-HPL    0.000000  -0.046000     0.87000
-                ! RETINAL from ab initio calc's (Mafalda)
-HPL1   0.000000  -0.0078000     0.87000
-                ! RETINAL from ab initio calc's (Mafalda)
-NCH1   0.000000  -0.200000     1.950000
-                ! RETINAL from ab initio calc's (Mafalda)
+    CR15     NCH1     CR14     HPL1     2     0.000000   100.000000
+    NCH1      CT2     CR15      HCR     2     0.000000    45.000000
+CHANGE UNIT FOR KPHI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
