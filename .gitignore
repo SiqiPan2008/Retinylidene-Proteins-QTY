@@ -11,8 +11,9 @@
 *.mol2*
 *.top*
 *.itp*
-*.prm*
 *.str*
 *.cif*
 *.ndx*
 *.xvg*
+*.json*
+*.md*

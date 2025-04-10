@@ -1,0 +1,49 @@
+TENTATIVE TITLE: 
+
+A structural and functional bioinformatics study of QTY-designed retinylidene proteins 
+(i.e., retinal-binding proteins)
+
+
+
+Pt.1 BACKGROUND
+
+Function of each protein?						  - read papers
+
+History of solubilizing studies?				  - read papers
+
+Existing QTY studies							  - organize papers
+
+
+
+
+Pt.2 QTY DESIGN
+
+Monomer-trimer comparison?						  - 0.5h
+
+Surface hydrophobicity?							  - 2h
+
+How evolutionarily distinct are they?			  - 2h
+Enhance 8-OPN figure?							  - 0.5h
+
+
+
+Pt.3 MD SIMULATION
+
+Force field files?								  - URGENT!!!!!!!!!!!!!
+DO THE CGenFF PARAMETERS ACCOUNT FOR DELOCALIZATION?
+IS IT NECESSARY TO INTRODUCE THE NEW PARAMETERS?
+
+RMSD changes? What to measure?					  - MEASURE
+RMSF? Radius of gyration? 						  - MEASURE
+
+Secondary structure analysis (DSSP)?			  - MEASURE?
+
+Principle component analysis for motion?		  - MEASURE?
+
+active site/binding pocket residues variation?	  - VISUALIZE
+Cavity volume?									  - MEASURE?
+
+Binding energy?									  - HARD
+
+Residue orientation and interaction changes?	  - VISUALIZE and MEASURE
+Hydrogen bonds? gmx hbond						  - MEASURE?
