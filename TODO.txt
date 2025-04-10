@@ -1,0 +1,24 @@
+GROMACS Manual
+P406 - force field
+P479 - file formats
+P544 - Analysis
+
+Pairs? if not found, consult CHARMM36/ffbonded.itp or other files
+Basic units confirmed. Units for coefficients?
+Change atom Names
+
+
+    CHARMM uses a distinct system of units, the AKMA system. I.e.
+Angstroms, Kilocalories/Mole, Atomic mass units. All distances are
+measured in Angstroms, energies in kcal/mole, mass in atomic mass units,
+and charge is in units of electron charge. Using this system, the AMKA
+unit of time is 4.888821E-14 seconds (based on the constants tabulated
+in Abramowitz and Stegun (1970)), however, for all input and output,
+the time is listed in picoseconds (20 AKMA time units is .978 picoseconds).
+In some places, the users may specify values in AKMA time units, and
+in some places both picosecond and AKMA time are output.
+
+    Angles are given in degrees for the analysis and constraint
+sections. In parameter files, the minimum positions of angles are
+specified in degrees, but the force constants for angles, dihedrals, and
+dihedral constraints are specified in kcal/mole/radian/radian.
