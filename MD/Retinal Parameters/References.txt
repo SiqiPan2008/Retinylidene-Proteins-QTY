@@ -17,3 +17,6 @@ https://www.ks.uiuc.edu/Research/namd/wiki/index.cgi?RetinalTop
 ! Hayashi, S. and I. Ohmine. 2000. Proton transfer in bacteriorhodopsin: Structure, excitation and IR spectra, and potential energy surface analyses by an ab initio QM/MM method. J. Phys. Chem. B 104:10678 10691.
 
 ! Hayashi, S., E. Tajkhorshid, E. Pebay-Peyroula, A. Royant, E. M. Landau, J. Navarro, and K. Schulten. 2001. Structural determinants of spectral tuning in retinal proteins bacteriorhodopsin vs sensory rhodopsin II. J. Phys. Chem. B 105:10124 10131.
+
+CHARMM-GUI website: energy kCal, length Angstrom, angle Rad
+GROMACS Manual: energy kJ, length nm, angle Rad

@@ -9,8 +9,6 @@
 *.tpr*
 *.pdb*
 *.mol2*
-*.top*
-*.itp*
 *.str*
 *.cif*
 *.ndx*
