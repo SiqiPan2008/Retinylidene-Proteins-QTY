@@ -4,11 +4,8 @@
 *.trr*
 *.cpt*
 *.log*
-*.gro*
 *.edr*
 *.tpr*
-*.pdb*
-*.mol2*
 *.str*
 *.cif*
 *.ndx*
