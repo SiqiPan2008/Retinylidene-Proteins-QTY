@@ -1,3 +1,6 @@
+; COMPARE INFO WITH FFBONDED.ITP
+; What about PAIRS?
+
 [ bondtypes ]
 ;      i        j  func           b0           kb
     NCH1      CT2     1   0.14900000       340.00
