@@ -2,8 +2,8 @@
 
 [ atomtypes ]
 ; type atnum         mass   charge ptype           sigma  epsilon
-   HPL     1      1.00800    0.000     A  0.087000000000 -0.1924640 ; Mafalda polyene Schiff base
-  HPL1     1      1.00800    0.000     A  0.087000000000 -0.0326352 ; Mafalda polyene Schiff base
+   HPL     1      1.00800    0.000     A  0.087000000000  0.1924640 ; Mafalda polyene Schiff base
+  HPL1     1      1.00800    0.000     A  0.087000000000  0.0326352 ; Mafalda polyene Schiff base
    HCR     1      1.00800    0.000     A  0.060000000000  0.0656888 ; Mafalda polyene Schiff base
   NCH1     7     14.00700    0.000     A  0.182400000000  0.7112800 ; protonated nitrogen Schiff base
    CR5     6     12.01100    0.000     A  0.190800000000  0.3598240 ; Aliphatic carbon SP2
