@@ -6,5 +6,3 @@ gmx grompp -f step6.5_equilibration.mdp -o cis6.5.tpr -p topol_cis.top -n index.
 gmx mdrun -deffnm cis6.5 -v
 gmx grompp -f step6.6_equilibration.mdp -o cis6.6.tpr -p topol_cis.top -n index.ndx -c cis6.5.gro -r cis6.5.gro -t cis6.5.cpt
 gmx mdrun -deffnm cis6.6 -v
-gmx grompp -f step7_production.mdp      -o cis7.tpr   -p topol_cis.top -n index.ndx -c cis6.6.gro -r cis6.6.gro -t cis6.6.cpt
-gmx mdrun -deffnm cis7 -v
