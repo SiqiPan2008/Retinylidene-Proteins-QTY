@@ -8,7 +8,7 @@
 ;;
 
 ; Include RET parameters
-#include "my_ret.prm"
+#include "ret_cis.prm"
 
 [ moleculetype ]
 ; name	nrexcl
