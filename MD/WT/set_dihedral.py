@@ -26,7 +26,7 @@ def measure_dihedral(a, b, c, d):
     dihedral = acos(cos_angle) * 180 / pi
     return dihedral
 
-with open("coordinates_to_rotate.txt", "r") as file:
+with open("coordinates_to_rotate_new.txt", "r") as file:
     lines = file.readlines()
 
 # axis is b-c
@@ -57,5 +57,5 @@ for point in points_to_rotate:
     rotated_vel = [f"{rotated_vel[i]:.4f}" for i in range(3)]
     points_rotated.append(point_id + rotated_pos + rotated_vel)
 
-with open("coordinates_rotated.txt", "w") as file:
+with open("coordinates_rotated_new.txt", "w") as file:
     lines = file.writelines([" ".join(point) + "\n" for point in points_rotated])
