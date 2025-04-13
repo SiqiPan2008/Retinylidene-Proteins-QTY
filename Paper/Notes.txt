@@ -1,6 +1,6 @@
 TENTATIVE TITLE: 
 
-A structural and functional bioinformatics study of QTY-designed retinylidene proteins 
+A structural and functional bioinformatics study of QTY-designed retinylidene proteins ...
 (i.e., retinal-binding proteins)
 
 
@@ -18,20 +18,16 @@ Existing QTY studies							  - organize papers
 
 Pt.2 QTY DESIGN
 
-Monomer-trimer comparison?						  - 0.5h
+Monomer-trimer comparison?
 
-Surface hydrophobicity?							  - 2h
+Surface hydrophobicity?
 
-How evolutionarily distinct are they?			  - 2h
-Enhance 8-OPN figure?							  - 0.5h
+How evolutionarily distinct are they?
+Enhance 8-OPN figure?
 
 
 
 Pt.3 MD SIMULATION
-
-Force field files?								  - URGENT!!!!!!!!!!!!!
-DO THE CGenFF PARAMETERS ACCOUNT FOR DELOCALIZATION?
-IS IT NECESSARY TO INTRODUCE THE NEW PARAMETERS?
 
 RMSD changes? What to measure?					  - MEASURE
 RMSF? Radius of gyration? 						  - MEASURE
