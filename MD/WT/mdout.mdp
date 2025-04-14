@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: PS (-1)
 ;	On host: JERRY-WORKSTATI
-;	At date: Sat Apr 12 11:57:37 2025
+;	At date: Sat Apr 12 13:22:54 2025
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2024.5 (-:
@@ -175,7 +175,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen-vel                  = no
 gen-temp                 = 300
-gen-seed                 = -135308177
+gen-seed                 = -109383949
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
