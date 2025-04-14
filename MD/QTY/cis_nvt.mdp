@@ -27,7 +27,7 @@ coulombtype             = PME
 rcoulomb                = 1.2
 ;
 tcoupl                  = V-rescale                 
-tc-grps                 = Protein Non-Protein		
+tc-grps                 = Protein-Ligand Non-Protein		
 tau_t                   = 1.0 1.0 
 ref_t                   = 303.15 303.15    
 ;
