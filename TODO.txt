@@ -9,6 +9,8 @@ See QRB Discovery requirements
 
 Figures / Tables
 
+Make Figures
+
 Background
 
 Methodology
