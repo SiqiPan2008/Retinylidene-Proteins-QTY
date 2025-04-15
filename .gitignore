@@ -11,3 +11,7 @@
 *.xvg*
 *.json*
 *.md
+*.synctex.gz
+*.blg
+*.bbl
+*.aux
