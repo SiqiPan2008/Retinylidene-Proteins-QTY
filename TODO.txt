@@ -1,20 +1,18 @@
-Prepare QTY Protein for sim
-
-See GROMACS Manual P544 - Analysis
-Explore other methods of analysis
-
 See QRB Discovery requirements
+https://www.cambridge.org/core/journals/qrb-discovery/information/author-instructions/preparing-your-materials
 
 提纲
 
-Figures / Tables
+ADD Channelrhodopsin
 
-Background
+Make Figures
 
-Methodology
+methodology
 
-Discussion
+introduction
 
-Results
+results and discussion.
 
-References
+<5000words, <=5tables/figures
+
+(keep up References)
