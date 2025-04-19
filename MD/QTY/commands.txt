@@ -1,4 +1,4 @@
-gmx editconf -f complex.gro -o newbox.gro -box 9.63340 9.63340 14.34437 -c
+gmx editconf -f complex.gro -o newbox.gro -box 14.34437 9.63340 9.63340 -c
 gmx solvate -cp newbox.gro -cs spc216.gro -p topol_cis.top -o solv.gro
 gmx grompp -f ions.mdp -c solv.gro -p topol_cis.top -o ions.tpr
 gmx genion -s ions.tpr -o solv_ions.gro -p topol_cis.top -pname NA -nname CL  -conc 0.15 -neutral
