@@ -20,7 +20,7 @@
 
 \corrauthor[2]{Shuguang Zhang}{Shuguang@MIT.EDU}
 
-\keywords{Keyword1; Keyword2; Keyword3}
+\keywords{Keyword 1; Keyword 2; Keyword 3}
 \begin{abstract}
 
 Abstract of paper -- leave until everything is written. 
@@ -35,30 +35,81 @@ Abstract of paper -- leave until everything is written.
 
 \section*{Introduction}
 
-Intro
+\textbf{* Families of opsins - vertebrate vs. bacterial}
 
-* Families of opsins - vertebrate vs. bacterial
+Retinylidene proteins are light-sensing proteins that bind to retinal as a chromophore. 
+Prevalence of these proteins - occur in many organisms, from archaea to vertebrates. 
+Evolutionarily distinct, convergence; GPCR vs ion pumps or channels. 
 
-* General features of vertebrate opsin; structure and function
+\textbf{* General features of vertebrate opsin; structure and function; activation mechanism of rhodopsin; may include existing rhodopsin bioinformatics studies?}
 
-* Activation mechanism of rhodopsin
+GPCR, 7TM. 
+RHO: rhodopsin is exemplary; earliest GPCR studied, bovine rhodopsin. 
+Lysine-retinal schiff base linkage, conserved evolutionarily. 
+Delocalized electrons in retinal, receive photon, high activation rate. 
+11-cis to all-trans isomerization.
+RHO: dark >> batho >> lumi >> meta I <<>> meta II; proton-transfer pathway. 
+TM6 outward. 
+Activates G-protein, initiate secondary messenger cascade. 
 
-* Expression, function of each opsin
+\textbf{* Expression, function of each vertebrate opsin}
 
-* General features of bacterial opsin; structure, function, applications
+The OPN family preferentially binds 11-cis-retinal and catalyzes its isomerization to all-trans-retinal via a retinochrome mechanism. 
 
-* Why solubilize
+OPN1MW (Medium-Wave-sensitive Opsin 1), OPN1LW (Long-Wave-sensitive Opsin 1) and OPN1SW (Short-Wave-sensitive Opsin 1) are proteins expressed in cone photoreceptors in the retina and are responsible for color vision. OPN1MW has maximum absorption at wavelength 530nm (green), OPN1LW at wavelength 560nm (red), and OPN1SW at wavelength 420nm (blue). They are responsible for various color vision defects. Deutanopia, a partial colorblindness characterized by a dichromasy in which red and green are confused, is caused by variants affecting OPN1MW. Protanopia, a partial colorblindness similar to deutanopia, is caused by variants affecting OPN1LW. Tritanopia, a color blindness characterized by selective deficiency of blue spectral sensitivity, is owed to variants of OPN1SW. Blue cone monochromacy, an X-linked congenital cone dysfunction syndrome, is caused by the absence of functional OPN1MW and OPN1LW. Finally, cone dystrophy 5 is an X-linked cone dystrophy characterized by loss of visual acuity, macular lesions, and color vision. 
 
-* History of solubilizing studies of rhodopsin and bacteriorhodopsin
+OPN2 (Opsin 2), also known as rhodopsin, is expressed in retinal rod photoreceptors and essential for light transduction and vision at low light intensity. It is correlated with retinitis pigmentosa 4, characterized by retinal pigments deposits, loss of night vision, loss of peripheral visual field, and eventual loss of central visual field. Autosomal dominant night blindness, a non-progressive impairment of night vision, is also attributed to mutation of OPN2. 
 
-* Existing QTY studies
+OPN3 (Opsin 3), also known as encephalopsin or panopsin, is a GPCR activated via ultraviolet A light. 
+Regulates melanogenesis in melanocytes. 
+Plays a role in melanocyte survival through regulation of intracellular Ca levels. 
+Regulates apoptosis via Cyt c release and activation of caspase cascade. 
+Keratinocyte differentiation in response to blue light. 
+Plays a role in light'mediated glucose uptake, mitochondrial respiration and fatty acid metabolism in brown adipocyte tissues. 
+May be involved in photorelaxation of airway smooth muscle cells via blue light. 
 
-* Intro to AlphaFold
+OPN4 (Opsin 4), also known as melanopsin, is expressed in ipRGC (intrinsically photosensitive Retinal Ganglion Cells) in the ganglion cell layer in the retina. Absorption wavelength??? It is responsible for pupillary reflex, photoentrainment, optokinetic visual tracking response, and other non-image-forming responses to light. 
 
-* Intro to GROMACS
+OPN5 (Opsin 5), also known as neuropsin, is a GPCR activated via ultraviolet A light. 
+Emission peaks at 380nm (UVA) and 470nm (blue). 
+Required for the light-response in the inner plexiform layer, and contributes to the regulation of the light-response in the nerve fiber layer. 
+Involved in local corneal and retinal circadian rhythm photoentrainment via modulation of UVA light-induced phase-shift of the retina clock. 
+Circadian photoreceptor in the outer ear. 
 
-* Existing rhodopsin bioinformatics studies
+RGR (RPE-retinal GPCR) is expressed in the RPE (retinal pigmented epithelium) and Muller cells in the retina. Unlike the aforementioned OPN family, RGR preferentially binds all-trans-retinal and may catalyze its isomerization via a retinochrome-like mechanism. FUNCTION?
 
+RRH (visual pigment-like receptor), also known as peropsin, is localized in the microvilli of RPE that surround photoreceptor outer segments. It may play a role in RPE physiology either by detecting light directly or by monitoring the concentration of retinal. FUNCTION?
+
+\textbf{* General features of bacterial opsin; structure, function, applications}
+
+7TM? 
+Ion channels or pumps? 
+Optogenetics. 
+Other applications??
+
+\textbf{* Expression, function of each bacterial opsin}
+
+BACR, or bacteriorhodopsin, is a 7TM protein that forms a trimer light-driven proton pump. It binds to 13-cis-retinal and catalyzes the isomerization to all-trans-retinal? Studied... Applications...
+
+BACH, or halorhodopsin, is a 7TM protein that forms a trimer light-driven chloride pump. It binds to 13-cis-retinal and catalyzes the isomerization to all-trans-retinal? Studied... It is activated by yellow light and is used as a tool of inhibition in optogenetics. More applications...
+
+ChR2, or channelrhodopsin 2, is a 7TM protein that forms a dimer light-activated sodium channel. It binds to 13-cis-retinal and catalyzes the isomerization to all-trans-retinal? Studied... It is activated by blue light and is used as a tool of excitation in optogenetics. More applications...
+
+\textbf{* Why solubilize}
+
+“Recently, we have asked if the QTY code is applicable to other retinylidene proteins. The retinylidene proteins are all integral membrane proteins with seven transmembrane alpha-helices embedded in a lipid bilayer. Therefore, because of the hydrophobic properties of transmembrane domains, they are not water-soluble without the aid of detergents. We wanted to see if the QTY code could be utilized to design water-soluble variants of these retinylidene proteins.”
+
+\textbf{* History of solubilizing studies of rhodopsin and bacteriorhodopsin}
+
+RESEARCH. 
+
+\textbf{* Existing QTY studies}
+
+\textbf{* Intro to AlphaFold}
+
+\textbf{* Intro to GROMACS}
+
+\textbf{* Overview of this paper}
 
 \section*{Results and Discussion}
 
@@ -140,41 +191,41 @@ There are no ethics issues related to the research in this paper. No animal or h
 	\centering
 	\caption{Protein characteristics}
 	\label{tb:characteristics}
-	\includegraphics[width=\linewidth]{figures/characteristics.jpg}
+	\includegraphics[width=\linewidth]{Figures/characteristics.jpg}
 \end{table}
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{figures/sequences.jpg}
+	\includegraphics[width=\linewidth]{Figures/sequences.jpg}
 	\caption{Protein sequence alignments}
 	\label{fig:sequences}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{figures/superimposition-human.jpg}
+	\includegraphics[width=\linewidth]{Figures/superimposition-human.jpg}
 	\caption{Superimposition of human retinylidene proteins}
 	\label{fig:humansup}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{figures/superimposition-bacterial.jpg}
+	\includegraphics[width=\linewidth]{Figures/superimposition-bacterial.jpg}
 	\caption{Superimposition of bacterial retinylidene proteins}
 	\label{fig:bacterialsup}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{figures/pairwise.jpg}
+	\includegraphics[width=\linewidth]{Figures/pairwise.jpg}
 	\caption{Pairwise comparison of human opsins}
 	\label{fig:pairwise}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{figures/hydrophobicity.jpg}
+	\includegraphics[width=\linewidth]{Figures/hydrophobicity.jpg}
 	\caption{Surface hydrophobicity}
 	\label{fig:hydrophobicity}
 \end{figure}
