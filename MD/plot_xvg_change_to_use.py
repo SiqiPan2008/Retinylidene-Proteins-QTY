@@ -17,7 +17,7 @@ def plot_running_avg(data):
     x_avg = x[len(x) - len(running_avg) : ]
     plt.plot(x_avg, running_avg, label="10-ps Running Avg", color="red")
 
-filename = "WT/rmsd_transprot"
+filename = "QTY/rmsd_transprot"
 data = load_xvg(f"{filename}.xvg")
 plt.figure(figsize=(8, 5))
 plt.plot(data[:, 0], data[:, 1], label="", color="black")

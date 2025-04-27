@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: PS (-1)
 ;	On host: JERRY-WORKSTATI
-;	At date: Sun Apr 20 01:21:11 2025
+;	At date: Sun Apr 20 15:46:55 2025
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2024.5 (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  C:\Gromacs\GMX
 ;	Working dir:  c:\Repo\Rhodopsins_QTY\MD\QTY
 ;	Command line:
-;	  gmx grompp -f cis_md.mdp -o cis_md.tpr -p topol_cis.top -c cis_npt2.gro -r cis_npt2.gro -t cis_npt2.cpt -n index.ndx
+;	  gmx grompp -f trans_md.mdp -o trans_md.tpr -p topol_trans.top -c trans_npt2.gro -r trans_npt2.gro -t trans_npt2.cpt -n index.ndx
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -25,7 +25,7 @@ integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.002
-nsteps                   = 5000000
+nsteps                   = 100000000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -175,7 +175,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen-seed                 = -134787393
+gen-seed                 = -1212940295
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
