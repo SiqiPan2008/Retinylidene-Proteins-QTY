@@ -24,3 +24,4 @@ gmx grompp -f trans_npt2.mdp -o trans_npt2.tpr -p topol_trans.top -c trans_npt1.
 gmx mdrun -deffnm trans_npt2 -v
 gmx grompp -f trans_md.mdp -o trans_md.tpr -p topol_trans.top -c trans_npt2.gro -r trans_npt2.gro -t trans_npt2.cpt -n index.ndx
 gmx mdrun -deffnm trans_md -v
+
