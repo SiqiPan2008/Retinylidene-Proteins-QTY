@@ -1,0 +1,9 @@
+1l: red
+1m: green
+1s: blue
+2: purple
+3: cyan
+4: gray
+5: olive
+rgr: orange
+rrh: pink

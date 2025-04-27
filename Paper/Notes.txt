@@ -1,68 +1,12 @@
 A structural and functional bioinformatics study of QTY-designed retinylidene proteins ...
 (i.e., retinal-binding proteins)
 
-
-### Pt.1 INTRODUCTION ###
-
-* Families of opsins - vertebrate vs. bacterial
-* General features of vertebrate opsin; structure and function
-* Activation mechanism of rhodopsin
-* Expression, function of each opsin
-* General features of bacterial opsin; structure, function, applications
-
-* Why solubilize
-* History of solubilizing studies of rhodopsin and bacteriorhodopsin
-
-* Intro to AlphaFold
-* Existing QTY studies
-
-* Intro to GROMACS
-* Existing rhodopsin bioinformatics studies
-
-
-### Pt.2 RESULTS AND DISCUSSION ###
-
-* discuss the QTY code
-* describe and explain Table1
-* describe and explain Fig1
-* describe and explain Fig2
-	> I need more discussion here
-* describe and explain Fig3
-* discuss AlphaFold3 predictions
-
-* describe, explain, discuss MD results (Fig3 and Fig4)
-	> I need more discussion here
-	
-* future scopes and potential applications
-
-* conclusion
-
-
-### Pt.3 MATERIALS AND METHODS ###
-
-* protein sequences UniProt
-* AlphaFold3 server
-* superimposition (PDB, AlphaFold, PyMOL)
-* Structure visualization (PyMOL, ChimeraX)
-* MD simulation (GROMACS, etc.; detailed params; analysis techniques)
-
-
-### TABLES AND FIGURES ###
-
-Table?: name of proteins, expression, function
-Fig1:   sequence comparison
-Table1: RMSD, MW, pI, variation
-Fig2:   superimpositions
-	2.1 human
-	2.2 superimpositions of 8 OPNs / table
-	2.3 bacterial, trimer
-Fig3:   surface hydrophobicity
-Fig4:   MD protein-ligand interaction
+Fig:   MD protein-ligand interaction
 	  > different states - binding pocket residues + ligand orientation
 	  > bond length, angle, dihedral, non-bonded interaction lengths graph
 	  > by-residue IE graph
 	  > hbond
-Fig5:   MD overall results
+Fig:   MD overall results
 	  > overall rmsd, gyrate, rmsf, IE graph
 	  > cavity volume?
 	  > PCA?
