@@ -15,19 +15,19 @@ def plot_running_avg(x, y):
     x_avg = x[len(x) - len(running_avg) : ]
     plt.plot(x_avg, running_avg, label="X-ps Running Avg", color="red")
 
-filename = "WT/rmsd_wt_SOLU"
+filename = "QTY/radius_cis_to_trans_ref_cismd"
 data = load_xvg(f"{filename}.xvg")
-x = [time - 10 for time in data[:, 0]]
+x = [time/1000 - 10 for time in data[:, 0]]
 y = data[:, 1]
 plt.figure(figsize=(8, 5))
 plt.plot(x, y, label="", color="black")
 plot_running_avg(x, y)
 plt.xlabel("time (ns)")
-plt.ylabel("RMSD (nm)")
+#plt.ylabel("RMSD (nm)")
 plt.title("")
-plt.ylim(0, 0.4)
+#plt.ylim(0, 1.2)
 plt.axvline(x=0, color='b', linestyle='--')
-#plt.xlim(-180, 180)
+#plt.xlim(-10, 0)
 #plt.legend()
 plt.grid(False)
 plt.savefig(f"{filename}.pdf", format="pdf", bbox_inches="tight")
