@@ -7,6 +7,7 @@ def delete_atom_and_update_indices(file_path, write_path, target_delete_atoms, t
     num_deleted = 0
     num_res_deleted = 0
     res_deleted = []
+    reached100000 = False
 
     for line in lines:
         line_splitted = line.split()
@@ -20,13 +21,17 @@ def delete_atom_and_update_indices(file_path, write_path, target_delete_atoms, t
         res_index = int(line_0[:-3])
         res_index -= num_res_deleted
         res_name = line_0[-3:]
+        if reached100000:
+           atom_index += 100000 
+        if atom_index == 99999:
+            reached100000 = True
         if atom_index in target_delete_atoms and num_deleted < len(target_delete_atoms):
             num_deleted += 1
             if res_index in target_delete_residues and res_index not in res_deleted:
                 num_res_deleted += 1
                 res_deleted.append(res_index)
             continue
-        new_line_splitted = [str(res_index), res_name, line_splitted[1], str(atom_index - num_deleted)] + line_splitted[3:]
+        new_line_splitted = [str(res_index), res_name, line_splitted[1], str((atom_index - num_deleted) % 100000)] + line_splitted[3:]
         formatted_line = ""
         formatted_line = "{:>5}{:>3}{:>7}{:>5}{:>8}{:>8}{:>8}\n".format(*new_line_splitted)
         updated_lines.append(formatted_line)
@@ -34,25 +39,41 @@ def delete_atom_and_update_indices(file_path, write_path, target_delete_atoms, t
     with open(write_path, "w") as file:
         file.writelines(updated_lines)
 
-file_path = "solv_ions_again.gro"
-write_path = "solv_ions_again_new.gro"
+file_path = "trans_em_again.gro"
+write_path = "trans_em_again_delwater.gro"
 target_delete_atoms = [
-    62459, 62460, 62461, 
-    62501, 62502, 62503, 
-    78107, 78108, 78109, 
-    78110, 78111, 78112, 
-    78116, 78117, 78118, 
-    78146, 78147, 78148, 
-    78167, 78168, 78169
+    5066,   5067,   5068, 
+    7994,   7995,   7996, 
+    8051,   8052,   8053, 
+    39665,  39666,  39667, 
+    62339,  62340,  62341, 
+    62549,  62550,  62551, 
+    67952,  67953,  67954, 
+    78410,  78411,  78412, 
+    86198,  86199,  86200, 
+    93791,  93792,  93793, 
+    94406,  94407,  94408, 
+    96140,  96141,  96142, 
+    104750, 104751, 104752, 
+    109544, 109545, 109546, 
+    126104, 126105, 126106
 ]
 target_delete_residues = [
-    19472,
-    19486,
-    24688,
-    24689,
-    24691,
-    24701,
-    24708
+    341,
+    1317,
+    1336,
+    11874,
+    19432,
+    19502,
+    21303,
+    24789,
+    27385,
+    29916,
+    30121,
+    30699,
+    33569,
+    35167,
+    40687
 ]
 delete_atom_and_update_indices(file_path, write_path, target_delete_atoms, target_delete_residues)
 
