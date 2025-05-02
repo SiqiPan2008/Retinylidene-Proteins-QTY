@@ -9,24 +9,25 @@ def load_xvg(filename):
                 data.append([float(x) for x in line.split()])
     return np.array(data)
 
-def plot_running_avg(data):
+def plot_running_avg(x, y):
     window_size = 1000
-    x = data[:, 0]
-    y = data[:, 1]
     running_avg = np.convolve(y, np.ones(window_size) / window_size, mode="valid")
     x_avg = x[len(x) - len(running_avg) : ]
-    plt.plot(x_avg, running_avg, label="10-ps Running Avg", color="red")
+    plt.plot(x_avg, running_avg, label="X-ps Running Avg", color="red")
 
-filename = "WT/rmsd_transprot"
+filename = "QTY-cut/rmsd_cis_md_again"
 data = load_xvg(f"{filename}.xvg")
+x = [time - 10 for time in data[:, 0]]
+y = data[:, 1]
 plt.figure(figsize=(8, 5))
-plt.plot(data[:, 0], data[:, 1], label="", color="black")
-plot_running_avg(data)
+plt.plot(x, y, label="", color="black")
+plot_running_avg(x, y)
 plt.xlabel("time (ns)")
 plt.ylabel("RMSD (nm)")
 plt.title("")
-plt.ylim(0, 0.35)
-#plt.xlim(-180, 180)
+#plt.ylim(0, 1.2)
+plt.axvline(x=0, color='b', linestyle='--')
+#plt.xlim(-10, 0)
 #plt.legend()
 plt.grid(False)
 plt.savefig(f"{filename}.pdf", format="pdf", bbox_inches="tight")

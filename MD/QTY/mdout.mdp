@@ -2,30 +2,30 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: PS (-1)
 ;	On host: JERRY-WORKSTATI
-;	At date: Sun Apr 20 15:46:55 2025
+;	At date: Thu May  1 10:47:15 2025
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2024.5 (-:
 ;	
 ;	Executable:   C:\Gromacs\GMX\bin\gmx.exe
 ;	Data prefix:  C:\Gromacs\GMX
-;	Working dir:  c:\Repo\Rhodopsins_QTY\MD\QTY
+;	Working dir:  C:\Repo\Rhodopsins_QTY\MD\QTY
 ;	Command line:
-;	  gmx grompp -f trans_md.mdp -o trans_md.tpr -p topol_trans.top -c trans_npt2.gro -r trans_npt2.gro -t trans_npt2.cpt -n index.ndx
+;	  gmx grompp -f cis_npt1.mdp -o cis_npt1_abinitio.tpr -p topol_cis.top -c cis_nvt_abinitio.gro -r cis_nvt_abinitio.gro -t cis_nvt_abinitio.cpt -n index.ndx
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
 ; e.g.: -I/home/joe/doe -I/home/mary/roe
 include                  = 
 ; e.g.: -DPOSRES -DFLEXIBLE (note these variable names are case sensitive)
-define                   = 
+define                   = -DPOSRES
 
 ; RUN CONTROL PARAMETERS
 integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
-dt                       = 0.002
-nsteps                   = 100000000
+dt                       = 0.001
+nsteps                   = 125000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -71,7 +71,7 @@ nstlog                   = 1000
 nstcalcenergy            = 100
 nstenergy                = 1000
 ; Output frequency and precision for .xtc file
-nstxout-compressed       = 1000
+nstxout-compressed       = 5000
 compressed-x-precision   = 1000
 ; This selects the subset of atoms for the compressed
 ; trajectory file. You can select multiple groups. By
@@ -155,7 +155,7 @@ tau_p                    = 5.0
 compressibility          = 4.5e-5
 ref_p                    = 0 1.0
 ; Scaling of reference coordinates, No, All or COM
-refcoord-scaling         = No
+refcoord_scaling         = com
 
 ; OPTIONS FOR QMMM calculations
 QMMM                     = no
@@ -175,7 +175,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen-seed                 = -1212940295
+gen-seed                 = 1308613543
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
