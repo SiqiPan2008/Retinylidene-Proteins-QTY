@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: PS (-1)
 ;	On host: JERRY-WORKSTATI
-;	At date: Wed Apr 30 21:32:31 2025
+;	At date: Thu May  1 16:34:44 2025
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2024.5 (-:
@@ -11,21 +11,21 @@
 ;	Data prefix:  C:\Gromacs\GMX
 ;	Working dir:  c:\Repo\Rhodopsins_QTY\MD\QTY-cut
 ;	Command line:
-;	  gmx grompp -f cis_nvt.mdp -o cis_nvt.tpr -p topol_cis.top -c cis_em.gro -r cis_em.gro -n index.ndx
+;	  gmx grompp -f cis_md.mdp -o cis_md_again.tpr -p topol_cis_again.top -c cis_npt2_again.gro -r cis_npt2_again.gro -t cis_npt2_again.cpt -n index_again.ndx
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
 ; e.g.: -I/home/joe/doe -I/home/mary/roe
 include                  = 
 ; e.g.: -DPOSRES -DFLEXIBLE (note these variable names are case sensitive)
-define                   = -DPOSRES
+define                   = 
 
 ; RUN CONTROL PARAMETERS
 integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
-dt                       = 0.001
-nsteps                   = 250000
+dt                       = 0.002
+nsteps                   = 5000000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -71,7 +71,7 @@ nstlog                   = 1000
 nstcalcenergy            = 100
 nstenergy                = 1000
 ; Output frequency and precision for .xtc file
-nstxout-compressed       = 5000
+nstxout-compressed       = 1000
 compressed-x-precision   = 1000
 ; This selects the subset of atoms for the compressed
 ; trajectory file. You can select multiple groups. By
@@ -144,16 +144,16 @@ print-nose-hoover-chain-variables = no
 ; Groups to couple separately
 tc-grps                  = SOLU SOLV
 ; Time constant (ps) and reference temperature (K)
-tau_t                    = 1.0 1.0
-ref_t                    = 303.15 303.15
+tau_t                    = 1.0   1.0
+ref_t                    = 303.15   303.15
 ; pressure coupling     
-pcoupl                   = no
-pcoupltype               = Isotropic
+pcoupl                   = C-rescale
+pcoupltype               = isotropic
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
-tau-p                    = 5
-compressibility          = 
-ref-p                    = 
+tau_p                    = 5.0
+compressibility          = 4.5e-5
+ref_p                    = 0 1.0
 ; Scaling of reference coordinates, No, All or COM
 refcoord-scaling         = No
 
@@ -173,16 +173,16 @@ annealing-time           =
 annealing-temp           = 
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
-gen_vel                  = yes
-gen_temp                 = 303.15
-gen_seed                 = -26945
+gen_vel                  = no
+gen-temp                 = 300
+gen-seed                 = 2141646814
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
 ; Type of constraint algorithm
 constraint_algorithm     = lincs
 ; Do not constrain the start configuration
-continuation             = no
+continuation             = yes
 ; Use successive overrelaxation to reduce the number of shake iterations
 Shake-SOR                = no
 ; Relative tolerance of shake
