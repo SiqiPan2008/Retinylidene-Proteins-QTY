@@ -1,4 +1,4 @@
-\documentclass[fleqn,10pt,lineno]{manuscript}
+\documentclass[fleqn,10pt]{manuscript}
 %%\usepackage{setspace}
 %%\doublespacing
 \usepackage{soul, hyperref}
@@ -77,7 +77,7 @@ In this paper, we apply the QTY code to redesign 9 human opsins and 3 microbial 
 
 \section*{Results and Discussion}
 
-\subsection*{The QTY code}
+\subsection*{The rationale of the QTY code}
 
 Discuss the QTY code. 
 
@@ -110,11 +110,17 @@ Discuss the role of AlphaFold3 predictions.
 Describe, explain, discuss MD simulation results. // NOTE: there were no changes to the NPxxY motif or retinal-binding Lys; "The ionic environment of the RSB, defined by the residues of the binding pocket, dictates the spectral and kinetic characteristics of each individual protein." \citep{Fenno_2011}, so QTY variant may have different absorption peak. 
 
 MD Results
+
 * different states - binding pocket residues + ligand orientation
+
 * bond length, angle, dihedral, non-bonded interaction lengths graph
+
 * by-helix rmsd
+
 * by-residue IE
+
 * hbond
+
 * overall rmsd, gyrate, rmsf, IE
 
 \subsection*{Future scopes and potential applications}
@@ -124,6 +130,8 @@ Future scopes and potential applications.
 \subsection*{Conclusion}
 
 Conclusion
+
+
 
 \section*{Methods}
 
@@ -149,7 +157,7 @@ All MD simulations and analyses were executed on a desktop computer with Intel X
 
 Regarding native OPN2, the membrane protein system was constructed using the web-based membrane builder CHARMM-GUI and was downloaded in GROMACS format \citep{Jo_2008, Wu_2014, Lee_2016}. The protein was centered in a rectangular box. The generated membrane models consisted of 40\% POPC, 40\% POPE, 10\% POPS, and 10\% cholesterol, which simulate a rod photoreceptor disk membrane \citep{Albert_2005}. The system was solvated in TIP3P water with 150 mM NaCl. 11-cis-retinal was manually added to the protein files. LINCS constraints were used for constraints, and Verlet integrator was used. Electrostatics was handled with Particle Mesh Ewald (PME), with both Coulomb and van der Waals interaction cutoffs set at 1.2 nm. The energy of the system was minimized using the steepest descent until the maximum forces converged below 1000 kJ/mol/nm. The standard six-step CHARMM-GUI NP$\gamma$T equilibration protocol \citep{Jo_2008} was used, with two 125-ps NVT equilibration simulations, and one 125-ps and three 500-ps NP$\gamma$T equilibration simulations. Temperature and pressure were maintained at 303.15 K and 1.0 bar, respectively, using the V-rescale thermostat and C-rescale barostat with surface-tension coupling. Following equilibration, a 10-ns production MD simulation was run. The retinal molecule was then manually switched to the all-trans state by rotating C13 to C15 and bonded hydrogen and methyl groups by 180 degrees around the C11-C12 bond. Energy minimization and equilibration were repeated exactly as before, and then a 200-ns production MD simulation was run. 
 
-Regarding QTY-designed OPN2, the system was constructed directly using GROMACS. The protein was centered in a rectangular box with dimensions equivalent to those of native OPN2. The equilibration involved a sequence of simulations: a 250-ps NVT equilibration, followed by 125-ps and 1500-ps NPT equilibrations, totaling an equilibration duration that matches that of the natural OPN2. All other configurations and parameters are identical to those of the original OPN2.
+Regarding QTY-designed OPN2, the system was constructed directly using GROMACS. The protein was centered in a rectangular box with dimensions equal to those of native OPN2. The equilibration involved a sequence of simulations: one 250-ps NVT equilibration, followed by one 125-ps and one 1500-ps NPT equilibrations, totaling an equilibration duration that matches that of the natural OPN2. All other configurations and parameters are identical to those of the original OPN2.
 
 [ANALYSIS METHODS OF MD SIMULATION RESULTS, TO BE ADDED.]
 
@@ -197,7 +205,7 @@ All methods were carried out in accordance with relevant guidelines and regulati
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/sequences.jpg}
-	\caption{Protein sequence alignments}
+	\caption{Protein sequence alignments --- THIS FIGURE NEEDS REVISION!!!!!}
 	\label{fig:sequences}
 \end{figure}
 
