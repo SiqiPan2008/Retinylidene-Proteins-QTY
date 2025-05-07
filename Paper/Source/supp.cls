@@ -40,7 +40,7 @@
                 justification=raggedright]{caption}
                 
 \RequirePackage{natbib}
-\bibliographystyle{apalike}
+\bibliographystyle{vancouver}
 
 %
 % writeLaTeX logo

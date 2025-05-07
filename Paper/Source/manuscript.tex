@@ -1,4 +1,4 @@
-\documentclass[fleqn,10pt]{manuscript}
+\documentclass[fleqn, 10pt, lineno]{manuscript}
 %%\usepackage{setspace}
 %%\doublespacing
 \usepackage{soul, hyperref}
@@ -37,37 +37,37 @@ This study investigates the QTY design of 9 human and 3 microbial retinylidene p
 
 \section*{Introduction}
 
-Retinylidene proteins are photochemically reactive proteins that are bound to or can bind to retinal (vitamin A aldehyde) as their chromophore \citep{Spudich_2000}. We will use the term ``opsin'' interchangeably with ``retinylidene protein'', despite the fact that ``opsin'' sometimes refers specifically to the chromophore-free apoprotein. Retinylidene proteins are divided into two groups, animal opsins and microbial opsins, which are evolutionarily distinct but share common characteristics such as having 7 transmembrane (TM) domains and a retinal binding lysine residue \citep{Yee_2013, Spudich_2000}. In this study, we will consider 9 animal opsins and 3 microbial opsins. 
+Retinylidene proteins are photochemically reactive proteins that are bound to or can bind to retinal (vitamin A aldehyde) as their chromophore \citep{Spudich_2000}. We will use the term ``opsin'' interchangeably with ``retinylidene protein'', despite the fact that ``opsin'' sometimes refers specifically to the chromophore-free apoprotein. Retinylidene proteins are divided into two groups, animal opsins and microbial opsins, which are evolutionarily distinct but share common characteristics such as having 7 transmembrane (TM) domains and a retinal-binding lysine residue \citep{Yee_2013, Spudich_2000}. In this study, we will consider 9 animal opsins and 3 microbial opsins. 
 
-\textbf{Animal opsins} are a type of class A GPCR (G-protein coupled receptor), which are characterized by 7 transmembrane domains, the NPxxY motif, and activation of G-proteins through the outward movement of TM6. \citep{Sakmar_2002, Nordstrom_2011, Zhou_2019}. Almost all animal opsins include a lysine residue that forms a Schiff base link with the retinal \citep{Bownds_1967, Guhmann_2022}. When retinal absorbs a photon, it isomerizes, usually changing from 11-cis to all-trans. The subsequent conformational changes of the protein are well studied using bovine rhodopsin, which changes from dark state to BATHO state, then LUMI, META I, and META II \citep{Okada_2001, Smith_2010}. Proton transfer plays a major role in this process \citep{Mahalingam_2008}. During this process, TM6 is characteristically moved outward, activating the G-protein. 
+\textbf{Animal opsins} are a type of class A GPCR (G-protein coupled receptor), which are characterized by 7 transmembrane domains, the NPxxY motif, and activation of G-proteins through the outward movement of TM6. \citep{Zhou_2019}. Almost all animal opsins include a lysine residue that forms a Schiff base link with the retinal \citep{Guhmann_2022}. When retinal absorbs a photon, it isomerizes, usually changing from 11-cis to all-trans. The subsequent conformational changes of the protein are well studied using bovine rhodopsin, which changes from dark state to BATHO state, then LUMI, META I, and META II \citep{Okada_2001}. Proton transfer plays a major role in this process \citep{Mahalingam_2008}. During this process, TM6 is characteristically moved outward, activating the G-protein. 
 
-In this study, we selected 9 opsins expressed in the human nervous system: OPN1MW (\href{https://www.uniprot.org/uniprotkb/P04001/entry}{P04001}), OPN1LW (\href{https://www.uniprot.org/uniprotkb/P04000/entry}{P04001}), OPN1SW (\href{https://www.uniprot.org/uniprotkb/P03999/entry}{P03999}), OPN2 (\href{https://www.uniprot.org/uniprotkb/P08100/entry}{P04001}), OPN3 (\href{https://www.uniprot.org/uniprotkb/Q9H1Y3/entry}{Q9H1Y3}), OPN4 (\href{https://www.uniprot.org/uniprotkb/Q9UHM6/entry}{Q9UHM6}), OPN5 (\href{https://www.uniprot.org/uniprotkb/Q6U736/entry}{Q6U736}), RGR (\href{https://www.uniprot.org/uniprotkb/P47804/entry}{P47804}) and RRH (\href{https://www.uniprot.org/uniprotkb/O14718/entry}{O14718}). They belong to several evolutionarily distinct families of animal opsins \citep{Terakita_2005, Shichida_2009}. 
+In this study, we selected 9 opsins expressed in the human nervous system: OPN1MW (UniProt ID: \href{https://www.uniprot.org/uniprotkb/P04001/entry}{P04001}), OPN1LW (UniProt ID: \href{https://www.uniprot.org/uniprotkb/P04000/entry}{P04001}), OPN1SW (UniProt ID: \href{https://www.uniprot.org/uniprotkb/P03999/entry}{P03999}), OPN2 (UniProt ID: \href{https://www.uniprot.org/uniprotkb/P08100/entry}{P04001}), OPN3 (UniProt ID: \href{https://www.uniprot.org/uniprotkb/Q9H1Y3/entry}{Q9H1Y3}), OPN4 (UniProt ID: \href{https://www.uniprot.org/uniprotkb/Q9UHM6/entry}{Q9UHM6}), OPN5 (UniProt ID: \href{https://www.uniprot.org/uniprotkb/Q6U736/entry}{Q6U736}), RGR (UniProt ID: \href{https://www.uniprot.org/uniprotkb/P47804/entry}{P47804}) and RRH (UniProt ID: \href{https://www.uniprot.org/uniprotkb/O14718/entry}{O14718}). They belong to several evolutionarily distinct families of animal opsins \citep{Terakita_2005}. 
 
 \textbf{OPN1MW} (Medium-Wave-sensitive Opsin 1), \textbf{OPN1LW} (Long-Wave-sensitive Opsin 1) and \textbf{OPN1SW} (Short-Wave-sensitive Opsin 1) are expressed in retinal cone photoreceptors and are responsible for color vision \citep{Bowmaker_1980}. Certain variants of OPN1MW, OPN1LW and OPN1SW respectively cause deutanopia, protanopia, and tritanopia, which are different types of color blindness \citep{Ueyama_2002, Baraas_2012}. The absence of both functional OPN1MW and OPN1LW causes blue cone monochromacy, an X-linked congenital cone dysfunction syndrome \citep{Wissinger_2022}, and cone dystrophy 5, an X-linked cone dystrophy \citep{Gardner_2010}. 
 
-\textbf{OPN2} (Opsin 2), also known as rhodopsin, is expressed in retinal rod photoreceptors and is responsible for vision at low light intensity \citep{Hubbard_1958}. Certain variants lead to autosomal recessive or autosomal dominant retinitis pigmentosa \citep{Fanelli_2021}. Other variants also lead to congenital stationary night blindness \citep{Fanelli_2021}. OPN2 is a representative animal opsin, one of the earliest studied \citep{Hubbard_1958}. In fact, bovine OPN2 is the first opsin to be sequenced \citep{Nathans_1984} as well as the first GPCR whose crystal structure was resolved experimentally \citep{Palczeski_2000}. Many studies on the functional mechanisms of animal opsins also focus on OPN2 \citep{Park_2008, Scheerer_2008, Kimata_2016}. Consequently, we also choose OPN2 to conduct a functional analysis in this study, in order to further explore the effectiveness of the QTY design of retinylidene proteins. 
+\textbf{OPN2} (Opsin 2), also known as rhodopsin, is expressed in retinal rod photoreceptors and is responsible for vision at low light intensity \citep{Hubbard_1958}. Certain variants lead to autosomal recessive or autosomal dominant retinitis pigmentosa and congenital stationary night blindness \citep{Fanelli_2021}. OPN2 is a representative animal opsin, one of the earliest studied. In fact, bovine OPN2 is the first opsin to be sequenced \citep{Nathans_1984} as well as the first GPCR whose crystal structure was resolved experimentally \citep{Palczeski_2000}. Many studies on the functional mechanisms of animal opsins also focus on OPN2. Consequently, we also chose OPN2 to conduct a functional analysis in this study, in order to further explore the effectiveness of the QTY design of retinylidene proteins. 
 
-\textbf{OPN3} (Opsin 3), also known as encephalopsin or panopsin, is activated by blue and ultraviolet A light. It is expressed in the brain \citep{Blackshaw_1999}. It is also expressed in melanocytes and keratinocytes in the skin and regulates functions such as melanogenesis, cell differentiation, and glucose uptake \citep{Koyanagi_2013, Olinski_2020}. 
+\textbf{OPN3} (Opsin 3), also known as encephalopsin or panopsin, is activated by blue and ultraviolet A light. It is expressed in the brain \citep{Blackshaw_1999}. It is also expressed in melanocytes and keratinocytes in the skin and regulates functions such as melanogenesis, cell differentiation, and glucose uptake. It is also expressed in the liver, pancreas, kidney, lung, heart, and skeletal muscles. When it is expressed in neurons, neurotransmitter release is inhibit by light, which renders OPN3 a useful optogenetic tool \citep{Copits_2021}. 
 
-\textbf{OPN4} (Opsin 4), also known as melanopsin, is expressed in ipRGC (intrinsically photosensitive Retinal Ganglion Cells) in the ganglion cell layer in the retina \citep{Provencio_1998}. It is responsible for pupillary reflex, photoentrainment, optokinetic visual tracking response, and other non-image-forming responses to light \citep{Berson_2002, Gooley_2003}. 
+\textbf{OPN4} (Opsin 4), also known as melanopsin, is expressed in ipRGC (intrinsically photosensitive Retinal Ganglion Cells) in the ganglion cell layer in the retina \citep{Provencio_1998}. It is essential for non-image-forming responses to light, including for pupillary reflex, optokinetic visual tracking response, and photoentrainment and regulation of circadian rhythm. Certain variants of OPN4 lead to seasonal affective disorder and other circadian rhythm disorders.  \citep{Berson_2002}. Image formation via OPN4-containing ipRGCs is also a potential pathway of treatment for various eye diseases such as retinitis pigmentosa and diabetic retinopathy. 
 
-\textbf{OPN5} (Opsin 5), also known as neuropsin, is activated by blue and ultraviolet A light \citep{Tarttelin_2003, Yamashita_2010}. It is expressed in the retina and contributes to the regulation of light-dependent vascular development \citep{Nguyen_2019} and photoentrainment in the cornea and retina \citep{Buhr_2015}. 
+\textbf{OPN5} (Opsin 5), also known as neuropsin, is activated by blue and ultraviolet A light \citep{Tarttelin_2003}. It is expressed in the retina and contributes to the regulation of light-dependent vascular development and photoentrainment in the cornea and retina \citep{Buhr_2015}. Certain variants of OPN5 may lead to cycloplegia, paralysis of the ciliary muscle in the eye. 
 
-\textbf{RGR} (RPE-retinal GPCR) is expressed in RPE (Retinal Pigmented Epithelium) and M\"uller cells in the retina \citep{Shen_1994}. Unlike the aforementioned human opsins, RGR preferentially binds all-trans-retinal and may catalyze its isomerization into 11-cis-retinal via a retinochrome-like mechanism \citep{Radu_2008}. It plays a role in the light-dependent synthesis of visual chromophore \citep{Radu_2008}.
+\textbf{RGR} (RPE-retinal GPCR) is expressed in RPE (Retinal Pigmented Epithelium) and M\"uller cells in the retina \citep{Shen_1994}. Unlike the aforementioned human opsins, RGR preferentially binds all-trans-retinal and may catalyze its isomerization into 11-cis-retinal via a retinochrome-like mechanism. It is expressed only in tissue surrounding photoreceptors and plays a role in the light-dependent synthesis of visual chromophore \citep{Radu_2008}.
 
-\textbf{RRH} (RPE-derived Rhodopsin Homolog), also known as peropsin, is localized in the microvilli of RPE cells that surround photoreceptor outer segments \citep{Sun_1997}. It is another protein that preferentially binds to all-trans-retinal \citep{Cook_2017}. 
+\textbf{RRH} (RPE-derived Rhodopsin Homolog), also known as peropsin, is localized in the microvilli of RPE cells that surround photoreceptor outer segments \citep{Sun_1997}. It is another protein that preferentially binds to all-trans-retinal \citep{Cook_2017}. Although not much information is known about RRH, it can reasonably be inferred that it photoisomerizes all-trans-retinal to 11-cis state, and may play a role in the upkeeping of photoreceptor functions. 
 
-\textbf{Bacterial opsins} are transmembrane ion pumps or channels \citep{Findlay_1986, Zhang_2011}. They are also 7TM, though this is due to convergent evolution rather than homology \citep{Yee_2013}. The isomerization of retinal is usually from all-trans to 13-cis, different from that in animal opsins \citep{Findlay_1986, Spudich_2000}. In addition, bacterial opsins often form oligomers to carry out their functions \citep{Taguchi_2023, Gmelin_2007, Shan_2024}.
+\textbf{Bacterial opsins} are transmembrane ion pumps or channels \citep{Findlay_1986, Zhang_2011}. They are also 7TM, though this is due to convergent evolution rather than homology \citep{Yee_2013}. The isomerization of retinal is usually from all-trans to 13-cis, different from that in animal opsins \citep{Findlay_1986}. In addition, bacterial opsins often form oligomers to carry out their functions \citep{Gmelin_2007}.
 
-In this study, we selected 3 bacterial opsins: BACR (\href{https://www.uniprot.org/uniprotkb/P02945/entry}{P02945}), BACH (\href{https://www.uniprot.org/uniprotkb/B0R2U4/entry}{B0R2U4}), ChR2 (\href{https://www.uniprot.org/uniprotkb/Q8RUT8/entry}{Q8RUT8}). 
+In this study, we selected 3 bacterial opsins: BACR (UniProt ID: \href{https://www.uniprot.org/uniprotkb/P02945/entry}{P02945}), BACH (UniProt ID: \href{https://www.uniprot.org/uniprotkb/B0R2U4/entry}{B0R2U4}), ChR2 (UniProt ID: \href{https://www.uniprot.org/uniprotkb/Q8RUT8/entry}{Q8RUT8}). 
 
-\textbf{BACR} (Bacteriorhodopsin) is a light-driven proton pump \citep{Oesterhelt_1971}. \textbf{BACH} (Halorhodopsin) is a light-driven chloride pump activated by yellow light \citep{Schobert_1982}. \textbf{ChR2} (Channelrhodopsin 2) is a light-activated sodium channel activated by blue light \citep{Nagel_2003}. BACH and ChR2 are among the first optogenetic tools \citep{Zhang_2007, Han_2007}. BACH is used for inhibition, while ChR2 is used for excitation. 
+\textbf{BACR} (Bacteriorhodopsin) is a light-driven proton pump and is one of the first bacterial opsins discovered \citep{Oesterhelt_1971}. \textbf{BACH} (Halorhodopsin) is a light-driven chloride pump activated by yellow light \citep{Schobert_1982}. \textbf{ChR2} (Channelrhodopsin 2) is a light-activated sodium channel activated by blue light \citep{Nagel_2003}. BACH and ChR2 are among the first optogenetic tools \citep{Zhang_2007, Han_2007}. BACH is used for inhibition, while ChR2 is used for excitation. 
 
-We have asked if retinylidene proteins could be redesigned to be more soluble. Retinylidene proteins are all integral membrane proteins with seven transmembrane alpha helices embedded in a lipid bilayer. Because of the hydrophobic properties of the transmembrane domains, they are not water-soluble without the aid of detergents. 
+We have asked whether retinylidene proteins could be redesigned to be more soluble. Retinylidene proteins are all integral membrane proteins with seven transmembrane alpha helices embedded in a lipid bilayer. Because of the hydrophobic properties of the transmembrane domains, they are not water-soluble without the aid of detergents. 
 
-Bacteriorhodopsin has been the subject of several protein-solubilizing studies, though with limited success \citep{Sirokman_1993, Gibas_1997, Mitra_2002}. Recently, researchers leveraged a neural network, SolubleMPNN, which was built upon ProteinMPNN, to engineer soluble variants of bacteriorhodopsin while maintaining its ligand-binding ability and light-sensing function \citep{Nikolaev_2024}.
+Bacteriorhodopsin has been the subject of several protein-solubilizing studies, though with limited success \citep{Qing_2022}. Recently, researchers leveraged a neural network, SolubleMPNN, which was built upon ProteinMPNN, to engineer soluble variants of bacteriorhodopsin while maintaining its ligand-binding ability and light-sensing function \citep{Nikolaev_2024}.
 
-Instead of taking a computational approach, we applied the QTY (Glutamine, Threonine, Tyrosine) code to systematically engineer water-soluble analogs with reduced hydrophobicity in membrane proteins. There are structural similarities between hydrophobic and polar amino acids: leucine (L) vs. glutamine (Q); isoleucine (I) / valine (V) vs. threonine (T); and phenylalanine (F) vs. tyrosine (Y), as can be observed on high-resolution electron density maps \citep{Zhang_2018, Zhang_2022, Tegler_2020}. This justifies the replacement of hydrophobic amino acids with polar ones. We initially applied the QTY code to design several detergent-free chemokines receptors, all of which retained structural thermal stability and native ligand-binding activities and enzymatic activities despite substantial changes to the transmembrane domain \citep{Zhang_2018, Tegler_2020}. We have also applied the QTY code to design water-soluble GPCRs, including chemokine receptors \citep{Zhang_2018, Qing_2019, Tegler_2020, Skuhersky_2021}, cytokine receptors \citep{Hao_2020}, and olfactory receptors \citep{Skuhersky_2021, Johnsson_2025}. 
+Instead of taking a computational approach, we applied the QTY (Glutamine, Threonine, Tyrosine) code to systematically engineer water-soluble analogs with reduced hydrophobicity in membrane proteins. There are structural similarities between hydrophobic and polar amino acids: leucine (L) \textit{vs} glutamine (Q); isoleucine (I) / valine (V) \textit{vs} threonine (T); and phenylalanine (F) \textit{vs} tyrosine (Y), as can be observed on high-resolution electron density maps \citep{Zhang_2018, Zhang_2022, Tegler_2020}. This justifies the replacement of hydrophobic amino acids with polar ones. We initially applied the QTY code to design several detergent-free chemokines receptors, all of which retained structural thermal stability and native ligand-binding activities and enzymatic activities despite substantial changes to the transmembrane domain \citep{Zhang_2018, Tegler_2020}. We have also applied the QTY code to design water-soluble GPCRs, including chemokine receptors \citep{Zhang_2018, Qing_2019, Tegler_2020, Skuhersky_2021}, cytokine receptors \citep{Hao_2020}, and olfactory receptors \citep{Skuhersky_2021, Johnsson_2025}. Besides GPCRs, we have also used the QTY code to design water-soluble glucose transporters \citep{Smorodina_2022}, ABC transporters \citep{Pan_2024}, monoamine neurotransmitter transporters \citep{Karagol_Karagol_Alper_2024}, glutamate transporters \citep{Karagol_Karagol_Smorodina_2024, Karagol_2024}, mitochondrial megacomplex \citep{Chen_2025}, antibodies \citep{Li_Wang_2024}, potassium channels \citep{Smorodina_2024}, receptor kinases \citep{Li_Tang_2024}, transmembrane enzymes \citep{Chen_Pan_2025}, as well as bacterial enzymes with beta barrel structures \citep{Sajeev-Sheeja_2023, Sajeev-Sheeja_2024}. The QTY-designed water-soluble CXCR4 chemokine receptor has been successfully in biomimetic sensors \citep{Qing_2023}. We have also applied the rQTY (reverse QTY) code to design nanoparticles \citep{Meng_2023}.
 
 AlphaFold2 was released by Google DeepMind in July 2021 \citep{Jumper_2021}. It greatly facilitated the study of QTY-designed protein variants. Subsequently, AlphaFold3 was released in May 2024, featuring improved architecture and improved efficiency \citep{Abramson_2024}. Furthermore, AlphaFold3 enabled the accurate prediction of complexes of multiple proteins, as well as complexes with nucleic acids and certain small molecules. QTY studies have made use of these new features \citep{Chen_2025, Johnsson_2025}. 
 
@@ -75,35 +75,73 @@ GROMACS is a molecular dynamics (MD) simulation program released in 1995 \citep{
 
 In this paper, we apply the QTY code to redesign 9 human opsins and 3 microbial opsins. We provide the superpositions of the AlphaFold3-predicted hydrophobic native proteins and their water-soluble QTY variants, and experimentally-determined structures when available. We also provide a comparison of the surface hydrophobicity of the variants. Furthermore, we run MD simulations of native and QTY-designed OPN2 and analyze their response to the 11-cis to all-trans isomerization of the retinal chromophore. 
 
+\section*{Methods}
+
+\subsection*{QTY design, protein sequence alignment and other characteristics}
+
+The native protein sequences for OPN1MW, OPN1LW, OPN1SW, OPN2, OPN3, OPN4, OPN5, RGR, RRH, BACR, BACH, and ChR2 were obtained from UniProt (\url{https://www.uniprot.org}). The sequence for ChR2 was truncated according to the experimentally determined structure in RCSB PDB (PDB ID: \href{https://www.rcsb.org/structure/8ZAN}{8ZAN}). The QTY designs were performed through the Protein Solubilizing Server (\url{https://pss.sjtu.edu.cn/}) \citep{Tao_2022}. For ChR2, the secondary structure was provided to the server in SS3 format according to the RCSB PDB structure. 
+
+\subsection*{AlphaFold3 predictions}
+
+We predicted the structures of native proteins and their QTY variants using the AlphaFold3 website (\url{https://alphafoldserver.com}) \citep{Abramson_2024}. For microbial opsins, the dimers and trimers had identical subunits, i.e., they were homodimers and homotrimers. In AlphaFold3, this was achieved by altering the number of protein copies. 
+
+\subsection*{Structure superpositions}
+
+PDB files for native protein structures determined experimentally by X-ray diffraction or electron microscopy were taken from RCSB PDB: OPN2 (PDB ID: \href{https://www.rcsb.org/structure/5W0P}{5W0P}), BACR (PDB ID: \href{https://www.rcsb.org/structure/7XJC}{7XJC}), BACH (PDB ID: \href{https://www.rcsb.org/structure/2JAF}{2JAF}), ChR2 (PDB ID: \href{https://www.rcsb.org/structure/8ZAN}{8ZAN}). The AlphaFold3-predicted native and QTY variants were taken directly from the most probable predicted structure. Superpositions were performed via the command ``super'' in PyMOL (\url{https://pymol.org}). We remove unstructured loops at the N and C terminals for the sake of clarity. 
+
+\subsection*{Structure visualization}
+
+We used PyMOL (\url{https://pymol.org}) to superpose the native predicted protein structures, their QTY variants, and the experimentally determined structures for the proteins where these existed. We then used UCSF ChimeraX (\url{https://www.cgl.ucsf.edu/chimerax/}) to render each protein model with hydrophobicity patches.  
+
+\subsection*{Molecular dynamics simulations}
+
+All MD simulations and analyses were executed on a desktop computer with Intel Xeon Platinum 8352V Processor, 256 GB RAM, and 2 NVIDIA GPU (GeForce RTX 4090) with 24 GB VRAM each. All MD simulations were conducted using GROMACS 2024.5 \citep{Abraham_2015} with the CHARMM36m all-atom force field \citep{Huang_2017}. Data for retinal were obtained from NAMD Wiki (\url{https://www.ks.uiuc.edu/Research/namd/wiki/index.cgi?RetinalTop} for topology and \url{https://www.ks.uiuc.edu/Research/namd/wiki/index.cgi?RetinalPar} for parameters) and manually integrated into the protein file. Initial structures, configuration files, and command-line codes for the simulations are publicly available at... [ONLINE DATABASE TO BE PREPARED]. 
+
+Regarding native OPN2, the membrane protein system was constructed using the web-based membrane builder CHARMM-GUI and was downloaded in GROMACS format \citep{Jo_2008, Wu_2014, Lee_2016}. The protein was centered in a rectangular box. The generated membrane models consisted of 40\% POPC, 40\% POPE, 10\% POPS, and 10\% cholesterol, which simulate a rod photoreceptor disk membrane \citep{Albert_2005}. The system was solvated in TIP3P water with 150 mM NaCl. 11-cis-retinal was manually added to the protein files. LINCS constraints were used for constraints, and Verlet integrator was used. Electrostatics was handled with Particle Mesh Ewald (PME), with both Coulomb and van der Waals interaction cutoffs set at 1.2 nm. The energy of the system was minimized using the steepest descent until the maximum forces converged below 1000 kJ/mol/nm. The standard six-step CHARMM-GUI NP$\gamma$T equilibration protocol \citep{Jo_2008} was used, with two 125-ps NVT equilibration simulations, and one 125-ps and three 500-ps NP$\gamma$T equilibration simulations. Temperature and pressure were maintained at 303.15 K and 1.0 bar, respectively, using the V-rescale thermostat and C-rescale barostat with surface-tension coupling. Following equilibration, a 10-ns production MD simulation was run. The retinal molecule was then manually switched to the all-trans state by rotating C13 to C15 and bonded hydrogen and methyl groups by 180 degrees around the C11-C12 bond. Energy minimization and equilibration were repeated exactly as before, and then a 200-ns production MD simulation was run. 
+
+Regarding QTY-designed OPN2, the system was constructed directly using GROMACS. The protein was centered in a rectangular box with dimensions equal to those of native OPN2. The equilibration involved a sequence of simulations: one 250-ps NVT equilibration, followed by one 125-ps and one 1500-ps NPT equilibrations, totaling an equilibration duration that matches that of the natural OPN2. All other configurations and parameters are identical to those of the original OPN2.
+
+[ANALYSIS METHODS OF MD SIMULATION RESULTS, TO BE ADDED.]
+
 \section*{Results and Discussion}
 
 \subsection*{The rationale of the QTY code}
 
-Discuss the QTY code. 
+The transmembrane segments of membrane proteins are hydrophobic in nature. This leads to a challenge to study their structure and function. Traditionally, detergent must be used to purify them. We consider a different approach, i.e., via systematic soluble protein design. There exists structural similarities, as can be observed on high-resolution electron density maps, between certain hydrophobic and hydrophilic amino acids: leucine (L) and glutamine (Q), isoleucine (I) or valine (V) and threonine (T), and phenylalanine (F) with tyrosine (Y). This fact enables systematic replacement of L with Q, I/V with T, and F with Y in all transmembrane segments of the membrane protein, which we named the QTY code. QTY analogs are less hydrophobic than native membrane proteins. Although their amino acid sequences have been significantly changed, they still exhibit relatively preserved structure, isoelectric points (pI), and molecular weights (MW) compared to the native membrane proteins (Table~\ref{tb:characteristics}). 
 
-\subsection*{Retinylidene proteins sequence alignments and other characteristics}
+\subsection*{Protein sequence alignments and other characteristics of retinylidene proteins}
 
-Describe and discuss Table~\ref{tb:characteristics} (native and QTY protein characteristics) // NOTE: the binding of retinal is posterior to folding, so it is safe to say that we predicted chromophore-free form (i.e. folding does not rely on retinal). 
+The protein sequences of 9 human opsins and 3 microbial opsins are aligned with their QTY analogs (Figure~\ref{fig:sequences}). The QTY substitution resulted in an overall variation of the sequence of 15.48\% to 30.04\% and a variation of transmembrane domain of 35.53\% to 50.24\%. Despite changes to the amino acid composition and sequence, the pI only experiences a slight change, between 0.00 and 0.16. This is because the amino acids Q, T, and Y have neutral charges and do not introduce additional charges to the system.  The MW increases slightly by a value between 0.04kDa and 0.60kDa. This is because the hydrophilic amino acids usually have nitrogen or oxygen atoms in place of carbon atoms in hydrophobic acids and thus may have higher mass: L (131.17Da) \textit{vs} Q (146.14Da); I (131.17Da) and V (117.15Da) \textit{vs} T (119.12Da); F (165.19Da) \textit{vs} Y (181.19Da). 
 
 \subsection*{Superpositions of AlphaFold3-predicted native human opsins, their water-soluble QTY variants, and experimentally determined structures}
 
-Describe and discuss Fig.~\ref{fig:humansup} (AF3 native - AF3 QTY - experimental superpositions of human opsins). 
+Although the chromophore, retinal, is bound to retinylidene proteins in an internal pocket, it is only incorporated into the protein after protein folding is complete. In other words, protein folding does not depend on the chromophore. Thus, it is justified to predict the ligand-free forms of the proteins. We used AlphaFold3 to predict the structure of the 9 native human opsins and their water-soluble QTY analogs. The structures superpose very well (Figure~\ref{fig:humansup} \textbf{a)} to \textbf{i)}). For OPN2, which has an available X-ray diffraction structure, we also superposed the experimentally determined structure with the AlphaFold3-predicted structures. Overall, the root mean square distances (RMSD) are small, from 0.307\AA to 0.611\AA, with only one exception of OPN2$^{\textrm{QTY}}$ \textit{vs} OPN2$^{\textrm{EXP}}$ (RMSD = 0.999). This shows that the water-soluble QTY analogs are quite similar to native proteins in terms of structure. 
 
-\subsection*{Pairwise superpositions among AlphaFold3-predicted native human opsins and among their water-soluble QTY variants}
-
-Describe and discuss Fig.~\ref{fig:pairwise} (pairwise superpositions of human opsins) // NOTE: the QTY pairwise superpositions roughly maintains the trends in the native superpositions. 
+All 9 of these human opsins belong to the same large family, i.e. animal opsins. However, they belong to different subfamilies and have structural differences from each other. In order to investigate the extent to which the water-soluble QTY analogs preserve these differences, we also conducted pairwise superpositions within all 9 native human opsins and within all 9 QTY analogs of human opsins (Figure~\ref{fig:humansup} \textbf{j)} and \textbf{k)}). As observed in the tables, there is a large degree of similarity between the RMSD between a pair of native proteins and that between the corresponding pair of QTY analogs. Therefore, we conclude that the structural differences are relatively well-preserved before and after the QTY substitution. However, whether the functional differences are preserved remains a problem to study. 
 
 \subsection*{Superpositions of AlphaFold3-predicted native microbial opsins, their water-soluble QTY variants, and experimentally determined structures}
 
-Describe and discuss Fig.~\ref{fig:microbialsup} (AF3 native - AF3 QTY - experimental superimpositions of microbial opsins) // NOTE: comment specifically on the formation of dimers and trimers. 
+We used AlphaFold3 to predict the structure of monomers of the 3 native microbial opsins, their water-soluble QTY analogs. Since microbial opsins often have to form oligomers to be functional, we also predicted the structure of native and QTY variants of BACR trimers, BACH trimers, and ChR2 dimers. These predicted structures are also superposed with experimentally determined structures (X-ray diffraction or electron microscopy). The structures superpose very well (Figure~\ref{fig:microbialsup}). Overall, the root mean square differences (RMSD) are small, with the highest value being 0.685\AA. This shows that the water-soluble QTY analogs are likely capable of forming oligomers with structures similar to those of native proteins. 
 
 \subsection*{Analysis of the hydrophobic surface of native retinylidene proteins and their water-soluble QTY variants}
 
-Describe and discuss Fig.~\ref{fig:hydrophobicity} (surface hydrophobicity). 
+Describe and discuss Figure~\ref{fig:hydrophobicity} (surface hydrophobicity). 
+
+As transmembrane proteins, retinylidene proteins require detergents to be separated from the lipid bilayer. The detergents act as an interface between the hydrophobic transmembrane domain of the protein and the surrounding water, thus solubilizing the protein. If these proteins are exposed in water without detergents, their hydrophobicity will induce them to aggregate and precipitate, with their structures and functions disrupted. 
+
+The hydrophobic portions of the protein surface are represented in yellow (Figure 5). In the native proteins, there are large hydrophobic patches in the transmembrane domains, which are embedded within the lipid bilayer. The nonpolar and hydrophobic amino acids including leucine (L), isoleucine (I), valine (V), phenylalanine (F), alanine (A), methionine (M), and tryptophan (W) interact with the hydrophobic hydrocarbon chains and expel water. 
+
+We investigate the surface hydrophobicity of water-soluble QTY-analogs in comparison with the native proteins. After applying the QTY code to respectively replace the hydrophobic amino acids L, I/V, and F with hydrophilic amino acids glutamine (Q), threonine (T), and tyrosine (Y), the hydrophobic surface areas are significantly reduced. More importantly, since the electron density maps of the corresponding amino acids are similar, the alpha helices in QTY analogs have a similar surface contour to the helices in the native proteins. The QTY analogs have successfully retained its structural integrity and stability. 
 
 \subsection*{AlphaFold3 predictions}
 
-Discuss the role of AlphaFold3 predictions. 
+DeepMind released AlphaFold3 in May 2024, marking a significant leap in accuracy for modeling across biomolecular space. This latest iteration outperforms state-of-the-art docking tools and its predecessor, AlphaFold-Multimer v.2.3, in protein structure and protein-protein interaction predictions \citep{Abramson_2024}. AlphaFold3 reduces the reliance on multiple sequence alignment by integrating a diffusion-based model, enabling it to predict a broader spectrum of biomolecules, including ligands, ions, nucleic acids, modified residues, and large protein megacomplexes. On October 9, 2024, DeepMind’s founders, Demis Hassabis and John Jumper, received the Nobel Prize in Chemistry for revolutionizing protein structure prediction through leveraging machine learning. 
+
+AlphaFold3 is easily accessible online (\url{https://alphafoldserver.com}), allowing users to make 30 predictions a day. The structures of the QTY analogs were predicted using the AlphaFold3 server, which was run free of charge and the results were produced within a few minutes. 
+
+DeepMind also collaborates with the EBI to make over 214 million predicted protein structures available through the AlphaFold Protein Structure Database (\url{https://alphafold.ebi.ac.uk}). This number is continuously expanding, with the quality of predictions further improving with the advent of AlphaFold 3. 
+
+However, AlphaFold3 still has limitations that have been encountered in this study. Although AlphaFold3 allows the structural prediction of complexes that include small-molecule ligands, it only supports a small range of ligands, which does not include retinal. We were therefore unable to predict the structure of chromophore-bound states of retinylidene proteins. Consequently, we chose another approach, namely molecular dynamics simulation, in order to investigate the behavior of QTY opsin analogs when they are bound to the chromophore. 
 
 \subsection*{Simulation of 11-cis to all-trans isomerization of retinal in native OPN2 and its QTY variant}
 
@@ -131,35 +169,6 @@ Future scopes and potential applications.
 
 Conclusion
 
-
-
-\section*{Methods}
-
-\subsection*{QTY design, protein sequence alignment and other characteristics}
-
-The native protein sequences for OPN1MW, OPN1LW, OPN1SW, OPN2, OPN3, OPN4, OPN5, RGR, RRH, BACR, BACH, and ChR2 were obtained from UniProt (\url{https://www.uniprot.org}). The sequence for ChR2 was truncated according to the experimental structure in RCSB PDB (\href{https://www.rcsb.org/structure/8ZAN}{8ZAN}). The QTY designs were performed through the Protein Solubilizing Server (\url{https://pss.sjtu.edu.cn/}) \citep{Tao_2022}. For ChR2, the secondary structure was provided to the server in SS3 format according to the RCSB PDB structure. 
-
-\subsection*{AlphaFold3 predictions}
-
-We predicted the structures of native proteins and their QTY variants using the AlphaFold3 website (\url{https://alphafoldserver.com}) \citep{Abramson_2024}. For microbial opsins, the dimers and trimers had identical subunits, i.e., they were homodimers and homotrimers. In AlphaFold3, this was achieved by altering the number of protein copies. 
-
-\subsection*{Structure superpositions}
-
-PDB files for native protein structures determined experimentally by X-ray diffraction or electron microscopy were taken from RCSB PDB: OPN2 (\href{https://www.rcsb.org/structure/5W0P}{5W0P}), BACR (\href{https://www.rcsb.org/structure/7XJC}{7XJC}), BACH (\href{https://www.rcsb.org/structure/2JAF}{2JAF}), ChR2 (\href{https://www.rcsb.org/structure/8ZAN}{8ZAN}). The AlphaFold3-predicted native and QTY variants were taken directly from the most probable predicted structure. Superpositions were performed via the command ``super'' in PyMOL (\url{https://pymol.org}). We remove unstructured loops at the N and C terminals for the sake of clarity. 
-
-\subsection*{Structure visualization}
-
-We used PyMOL (\url{https://pymol.org}) to superpose the native predicted protein structures, their QTY variants, and the experimental structures for the proteins where these existed. We then used UCSF ChimeraX (\url{https://www.cgl.ucsf.edu/chimerax/}) to render each protein model with hydrophobicity patches.  
-
-\subsection*{Molecular dynamics simulations}
-
-All MD simulations and analyses were executed on a desktop computer with Intel Xeon Platinum 8352V Processor, 256 GB RAM, and 2 NVIDIA GPU (GeForce RTX 4090) with 24 GB VRAM each. All MD simulations were conducted using GROMACS 2024.5 \citep{Abraham_2015} with the CHARMM36m all-atom force field \citep{Huang_2017}. Data for retinal were obtained from NAMD Wiki (\url{https://www.ks.uiuc.edu/Research/namd/wiki/index.cgi?RetinalTop} for topology and \url{https://www.ks.uiuc.edu/Research/namd/wiki/index.cgi?RetinalPar} for parameters) and manually integrated into the protein file. Initial structures, configuration files, and command-line codes for the simulations are publicly available at... [ONLINE DATABASE TO BE PREPARED]. 
-
-Regarding native OPN2, the membrane protein system was constructed using the web-based membrane builder CHARMM-GUI and was downloaded in GROMACS format \citep{Jo_2008, Wu_2014, Lee_2016}. The protein was centered in a rectangular box. The generated membrane models consisted of 40\% POPC, 40\% POPE, 10\% POPS, and 10\% cholesterol, which simulate a rod photoreceptor disk membrane \citep{Albert_2005}. The system was solvated in TIP3P water with 150 mM NaCl. 11-cis-retinal was manually added to the protein files. LINCS constraints were used for constraints, and Verlet integrator was used. Electrostatics was handled with Particle Mesh Ewald (PME), with both Coulomb and van der Waals interaction cutoffs set at 1.2 nm. The energy of the system was minimized using the steepest descent until the maximum forces converged below 1000 kJ/mol/nm. The standard six-step CHARMM-GUI NP$\gamma$T equilibration protocol \citep{Jo_2008} was used, with two 125-ps NVT equilibration simulations, and one 125-ps and three 500-ps NP$\gamma$T equilibration simulations. Temperature and pressure were maintained at 303.15 K and 1.0 bar, respectively, using the V-rescale thermostat and C-rescale barostat with surface-tension coupling. Following equilibration, a 10-ns production MD simulation was run. The retinal molecule was then manually switched to the all-trans state by rotating C13 to C15 and bonded hydrogen and methyl groups by 180 degrees around the C11-C12 bond. Energy minimization and equilibration were repeated exactly as before, and then a 200-ns production MD simulation was run. 
-
-Regarding QTY-designed OPN2, the system was constructed directly using GROMACS. The protein was centered in a rectangular box with dimensions equal to those of native OPN2. The equilibration involved a sequence of simulations: one 250-ps NVT equilibration, followed by one 125-ps and one 1500-ps NPT equilibrations, totaling an equilibration duration that matches that of the natural OPN2. All other configurations and parameters are identical to those of the original OPN2.
-
-[ANALYSIS METHODS OF MD SIMULATION RESULTS, TO BE ADDED.]
 
 \section*{Supplementary Material}
 
@@ -196,7 +205,7 @@ All methods were carried out in accordance with relevant guidelines and regulati
 
 \begin{table}[htbp]
 	\centering
-	\caption{Protein characteristics}
+	\caption{\textbf{Protein characteristics of 12 retinylidene proteins and their QTY analogs. } Blue: human opsins; purple: microbial opsins. RMSD: root mean square distance; pI: isoelectric focusing; MW: molecular weight; TM: transmembrane. }
 	\label{tb:characteristics}
 	\includegraphics[width=\linewidth]{Figures/characteristics.jpg}
 \end{table}
@@ -205,22 +214,45 @@ All methods were carried out in accordance with relevant guidelines and regulati
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/sequences.jpg}
-	\caption{Protein sequence alignments --- THIS FIGURE NEEDS REVISION!!!!!}
+	\caption{\textbf{The protein sequence alignments of 12 retinylidene proteins and their QTY analogs. } Blue: human opsins; purple: microbial opsins. The symbols $|$ and $*$ indicate that amino acids are identical and different respectively. Amino acids L, V, I and F in TM (transmembrane) alpha helices are replaced with Q, T, Y and Y respectively. The alpha helices (blue) are shown above the protein sequences. The characteristics of the proteins are shown above the sequences. 
+    The alignments are: 
+    \textbf{a)} OPN1MW \textit{vs} OPN1MW$^{\textrm{QTY}}$, 
+    \textbf{b)} OPN1LW \textit{vs} OPN1LW$^{\textrm{QTY}}$, 
+    \textbf{c)} OPN1SW \textit{vs} OPN1SW$^{\textrm{QTY}}$, 
+    \textbf{d)} OPN2 \textit{vs} OPN2$^{\textrm{QTY}}$, 
+    \textbf{e)} OPN3 \textit{vs} OPN3$^{\textrm{QTY}}$, 
+    \textbf{f)} OPN4 \textit{vs} OPN4$^{\textrm{QTY}}$, 
+    \textbf{g)} OPN5 \textit{vs} OPN5$^{\textrm{QTY}}$, 
+    \textbf{h)} RGR \textit{vs} RGR$^{\textrm{QTY}}$, 
+    \textbf{i)} RRH \textit{vs} RRH$^{\textrm{QTY}}$, 
+    \textbf{j)} BACR \textit{vs} BACR$^{\textrm{QTY}}$, 
+    \textbf{k)} BACH \textit{vs} BACH$^{\textrm{QTY}}$, 
+    \textbf{l)} ChR2 \textit{vs} ChR2$^{\textrm{QTY}}$. }
 	\label{fig:sequences}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=\linewidth]{Figures/superposition-human.jpg}
-	\caption{Superposition of human retinylidene proteins}
+	\includegraphics[width=\linewidth]{Figures/superposition-human-pairwise.jpg}
+	\caption{Superposition of AlphaFold3-predicted native human retinylidene proteins, their QTY analogs, and experimentally determined structures. 
+    For \textbf{a)} to \textbf{i)}, green: AlphaFold3-predicted native structure; cyan: AlphaFold3-predicted QTY analog structure; magenta: experimentally determined structure. The superpositions are 
+    \textbf{a)} OPN1MW$^{\textrm{AF3}}$ \textit{vs} OPN1MW$^{\textrm{QTY}}$, 
+    \textbf{b)} OPN1LW$^{\textrm{AF3}}$ \textit{vs} OPN1LW$^{\textrm{QTY}}$, 
+    \textbf{c)} OPN1SW$^{\textrm{AF3}}$ \textit{vs} OPN1SW$^{\textrm{QTY}}$, 
+    \textbf{d)} OPN2$^{\textrm{AF3}}$ \textit{vs} OPN2$^{\textrm{QTY}}$ \textit{vs} OPN2$^{\textrm{EXP}}$, 
+    \textbf{e)} OPN3$^{\textrm{AF3}}$ \textit{vs} OPN3$^{\textrm{QTY}}$, 
+    \textbf{f)} OPN4$^{\textrm{AF3}}$ \textit{vs} OPN4$^{\textrm{QTY}}$, 
+    \textbf{g)} OPN5$^{\textrm{AF3}}$ \textit{vs} OPN5$^{\textrm{QTY}}$, 
+    \textbf{h)} RGR$^{\textrm{AF3}}$ \textit{vs} RGR$^{\textrm{QTY}}$, 
+    \textbf{i)} RRH$^{\textrm{AF3}}$ \textit{vs} RRH$^{\textrm{QTY}}$, 
+    \textbf{j)} BACR$^{\textrm{AF3}}$ \textit{vs} BACR$^{\textrm{QTY}}$, 
+    \textbf{k)} BACH$^{\textrm{AF3}}$ \textit{vs} BACH$^{\textrm{QTY}}$, 
+    \textbf{l)} ChR2$^{\textrm{AF3}}$ \textit{vs} ChR2$^{\textrm{QTY}}$. 
+    For \textbf{j)} and \textbf{k)}, green: OPN1MW; red: OPN1LW; blue: OPN1SW; purple: OPN2; cyan: OPN3; gray: OPN4; olive: OPN5; orange: RGR; pink: RRH. The superpositions are
+    \textbf{j)} OPN1MW$^{\textrm{AF3}}$ \textit{vs} OPN1LW$^{\textrm{AF3}}$ \textit{vs} OPN1SW$^{\textrm{AF3}}$ \textit{vs} OPN2$^{\textrm{AF3}}$ \textit{vs} OPN3$^{\textrm{AF3}}$ \textit{vs} OPN4$^{\textrm{AF3}}$ \textit{vs} OPN5$^{\textrm{AF3}}$ \textit{vs} RGR$^{\textrm{AF3}}$ \textit{vs} RRH$^{\textrm{AF3}}$, 
+    \textbf{k)} OPN1MW$^{\textrm{QTY}}$ \textit{vs} OPN1LW$^{\textrm{QTY}}$ \textit{vs} OPN1SW$^{\textrm{QTY}}$ \textit{vs} OPN2$^{\textrm{QTY}}$ \textit{vs} OPN3$^{\textrm{QTY}}$ \textit{vs} OPN4$^{\textrm{QTY}}$ \textit{vs} OPN5$^{\textrm{QTY}}$ \textit{vs} RGR$^{\textrm{QTY}}$ \textit{vs} RRH$^{\textrm{QTY}}$. 
+    }
 	\label{fig:humansup}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\linewidth]{Figures/pairwise.jpg}
-	\caption{Pairwise comparison of human opsins. Green: OPN1MW; red: OPN1LW; blue: OPN1SW; purple: OPN2; cyan: OPN3; gray: OPN4; olive: OPN5; orange: RGR; pink: RRH. }
-	\label{fig:pairwise}
 \end{figure}
 
 \begin{figure}[htbp]
