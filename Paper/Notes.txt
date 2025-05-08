@@ -1,13 +1,13 @@
-A structural and functional bioinformatics study of QTY-designed retinylidene proteins ...
-(i.e., retinal-binding proteins)
+TODO:
 
-Fig:   MD protein-ligand interaction
-	  > different states - binding pocket residues + ligand orientation
-	  > bond length, angle, dihedral, non-bonded interaction lengths graph
-	  > by-residue IE graph
-	  > hbond
-Fig:   MD overall results
-	  > overall rmsd, gyrate, rmsf, IE graph
-	  > cavity volume?
-	  > PCA?
-	  > MMPBSA?
+get SOLU only traj
+identify binding pocket
+make ndx
+
+write batch file for RMSD calculations
+calculate rmsf
+calculate radius
+calculate water number
+calculate hbond
+
+investigate ie
