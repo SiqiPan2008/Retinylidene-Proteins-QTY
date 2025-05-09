@@ -54,7 +54,7 @@ for protein in ["qty", "wt"]:
     ax.set_xlim(0, (10 + 120) * 500)
     ax.set_xticks(np.arange(0, (10 + 120) * 500 + 1, 10 * 500))
     ax.set_xticklabels(np.arange(-10, 120 + 1, 10))
-    ax.axvline(x=10*500, color='b', linestyle='--')
+    ax.axvline(x=10*500, color='brown', linestyle='--', linewidth=1 )
     plt.savefig(f"{protein}_{targetname}.pdf", format="pdf", bbox_inches="tight")
     fig.colorbar(cax)
     plt.savefig(f"{protein}_{targetname}_colorbar.pdf", format="pdf", bbox_inches="tight")
