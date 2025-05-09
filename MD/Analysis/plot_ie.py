@@ -32,11 +32,11 @@ for protein in ["qty", "wt"]:
     for group in groups:
         cis_data = load_xvg_ie(f"{protein}_cis_{targetname}_{group}.xvg", byres=False)
         data_temp.append(cis_data)
-        #trans_data = load_ie_not_byres(f"{protein}_trans_{targetname}_{group}.xvg")
+        #trans_data = load_xvg_ie(f"{protein}_trans_{targetname}_{group}.xvg"， byres=False)
         #data_temp.append(np.concatenate((cis_data, trans_data), axis=0))
     cis_data = load_xvg_ie(f"{protein}_cis_{targetname}_byres.xvg", byres=True)
     data_temp.append(cis_data)
-    #trans_data = load_ie_byres(f"{protein}_trans_{targetname}_{resname}.xvg")
+    #trans_data = load_xvg_ie(f"{protein}_trans_{targetname}_byres.xvg", byres=True)
     #data_temp.append(np.concatenate((cis_data, trans_data), axis=0))
     data = np.concatenate(data_temp, axis=0)
     
