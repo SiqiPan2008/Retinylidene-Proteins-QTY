@@ -26,7 +26,7 @@ colors = [cmap(i) for i in range(16)]
 for protein in ["qty", "wt"]:
     plt.figure(figsize=(8, 5))
     plt.xlabel("Time (ns)")
-    plt.ylabel("RMSD (ns)")
+    plt.ylabel("RMSD (nm)")
     plt.title("")
     plt.xlim(-10, 120)
     plt.xticks(np.arange(-10, 121, 10))
@@ -41,5 +41,5 @@ for protein in ["qty", "wt"]:
         #plt.plot(x, y, label=subtargetnames[i], color=colors[i][0], linewidth=0.5)
         plot_running_avg(x, y, c=colors[i], labelname=subtargetnames[i], window=2)
     plt.legend()
-    plt.savefig(f"{protein}_cis_{targetname}.pdf", format="pdf", bbox_inches="tight")
+    plt.savefig(f"{protein}_{targetname}_byres.pdf", format="pdf", bbox_inches="tight")
     plt.show()
