@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: PS (-1)
 ;	On host: JERRY-WORKSTATI
-;	At date: Fri May  9 12:19:23 2025
+;	At date: Fri May  9 21:33:57 2025
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2024.5 (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  C:\Gromacs\GMX
 ;	Working dir:  C:\Repo\Rhodopsins_QTY\MD\Analysis
 ;	Command line:
-;	  gmx grompp -f qty_cis_ie_prot.mdp -c qty_cis.gro -t qty_cis.cpt -p qty_cis.top -n qty_cis.ndx -o qty_cis_ie_prot.tpr
+;	  gmx grompp -f wt_trans_ie_pocket.mdp -c wt_trans.gro -t wt_trans.cpt -p wt_trans.top -n wt_trans.ndx -o wt_trans_ie_pocket.tpr
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -25,7 +25,7 @@ integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.002
-nsteps                   = 5000000
+nsteps                   = 60000000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -39,7 +39,7 @@ comm_mode                = linear
 ; number of steps for center of mass motion removal
 nstcomm                  = 100
 ; group(s) for center of mass motion removal
-comm_grps                = SOLU SOLV
+comm_grps                = SOLU_MEMB SOLV
 
 ; LANGEVIN DYNAMICS OPTIONS
 ; Friction coefficient (amu/ps) and random seed
@@ -78,7 +78,7 @@ compressed-x-precision   = 1000
 ; default, all atoms will be written.
 compressed-x-grps        = 
 ; Selection of energy groups
-energygrps               = Protein RET
+energygrps               = pocket RET
 
 ; NEIGHBORSEARCHING PARAMETERS
 ; cut-off scheme (Verlet: particle based cut-offs)
@@ -107,13 +107,13 @@ rcoulomb                 = 1.2
 epsilon-r                = 1
 epsilon-rf               = 0
 ; Method for doing Van der Waals
-vdwtype                  = cutoff
-vdw-modifier             = force-switch
+vdwtype                  = Cut-off
+vdw-modifier             = Force-switch
 ; cut-off lengths       
-rvdw-switch              = 1.0
+rvdw_switch              = 1.0
 rvdw                     = 1.2
 ; Apply long range dispersion corrections for Energy and Pressure
-DispCorr                 = no
+DispCorr                 = No
 ; Extension of the potential lookup tables beyond the cut-off
 table-extension          = 1
 ; Separate tables between energy group pairs
@@ -137,23 +137,23 @@ implicit-solvent         = no
 ensemble-temperature-setting = auto
 ensemble-temperature     = -1
 ; Temperature coupling  
-tcoupl                   = V-rescale
+tcoupl                   = v-rescale
 nsttcouple               = -1
 nh-chain-length          = 10
 print-nose-hoover-chain-variables = no
 ; Groups to couple separately
-tc-grps                  = SOLU SOLV
+tc_grps                  = SOLU MEMB SOLV
 ; Time constant (ps) and reference temperature (K)
-tau_t                    = 1.0   1.0
-ref_t                    = 303.15   303.15
+tau_t                    = 1.0 1.0 1.0
+ref_t                    = 303.15 303.15 303.15
 ; pressure coupling     
 pcoupl                   = C-rescale
-pcoupltype               = isotropic
+pcoupltype               = surface-tension
 nstpcouple               = -1
 ; Time constant (ps), compressibility (1/bar) and reference P (bar)
 tau_p                    = 5.0
-compressibility          = 4.5e-5
-ref_p                    = 0 1.0
+compressibility          = 4.5e-5  4.5e-5
+ref_p                    = 0     1.0
 ; Scaling of reference coordinates, No, All or COM
 refcoord-scaling         = No
 
@@ -173,14 +173,14 @@ annealing-time           =
 annealing-temp           = 
 
 ; GENERATE VELOCITIES FOR STARTUP RUN
-gen_vel                  = no
+gen-vel                  = no
 gen-temp                 = 300
-gen-seed                 = -1660944610
+gen-seed                 = -1007157762
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
 ; Type of constraint algorithm
-constraint_algorithm     = lincs
+constraint_algorithm     = LINCS
 ; Do not constrain the start configuration
 continuation             = yes
 ; Use successive overrelaxation to reduce the number of shake iterations
