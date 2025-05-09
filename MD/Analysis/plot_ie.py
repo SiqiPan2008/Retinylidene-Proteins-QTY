@@ -40,12 +40,13 @@ for protein in ["qty", "wt"]:
     #data_temp.append(np.concatenate((cis_data, trans_data), axis=0))
     data = np.concatenate(data_temp, axis=0)
     
-    fig, ax = plt.subplots(figsize=(8, 5))
+    fig, ax = plt.subplots(figsize=(4, 5))
     vmax = np.max(np.abs(data))
     cax = ax.imshow(data, aspect="auto", cmap="RdBu_r", vmin=-vmax, vmax=vmax, origin="lower", interpolation="nearest")
-    fig.colorbar(cax)
     ax.set_xlabel("Time (ns)")
     ax.set_ylabel("")
+    ax.set_yticks(range(17))
+    ax.set_yticklabels(["Protein", "Pocket"] + reslabels[protein])
     ax.set_ylim(-0.5, 16.5)
     for y in np.arange(0.5, 17, 1):
         ax.axhline(y=y, color="black", linestyle="-", linewidth=1)
@@ -55,6 +56,8 @@ for protein in ["qty", "wt"]:
     ax.set_xticklabels(np.arange(-10, 120 + 1, 10))
     ax.axvline(x=10*500, color='b', linestyle='--')
     plt.savefig(f"{protein}_{targetname}.pdf", format="pdf", bbox_inches="tight")
+    fig.colorbar(cax)
+    plt.savefig(f"{protein}_{targetname}_colorbar.pdf", format="pdf", bbox_inches="tight")
     plt.show()
 
 
