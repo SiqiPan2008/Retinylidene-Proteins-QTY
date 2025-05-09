@@ -1,0 +1,37 @@
+# This file was created Sun Mar 30 18:37:21 2025
+# Created by:
+#                      :-) GROMACS - gmx angle, 2024.5 (-:
+# 
+# Executable:   C:\Gromacs\GMX\bin\gmx.exe
+# Data prefix:  C:\Gromacs\GMX
+# Working dir:  C:\Repo\Opsin-Design\MD\QTY
+# Command line:
+#   gmx angle -f md92.xtc -n index.ndx -od dihedral2_md92.xvg -type dihedral
+# gmx angle is part of G R O M A C S:
+#
+# GRoups of Organic Molecules in ACtion for Science
+#
+@    title "Dihedral Distribution: a_5325_a_5315_a_5316_a_5317"
+@    xaxis  label "Degrees"
+@    yaxis  label ""
+@TYPE xy
+@    subtitle "average angle: -0.429211\So\N"
+       -11    0.000000
+       -10    0.047619
+        -9    0.000000
+        -8    0.000000
+        -7    0.000000
+        -6    0.047619
+        -5    0.047619
+        -4    0.000000
+        -3    0.095238
+        -2    0.095238
+        -1    0.142857
+         0    0.095238
+         1    0.095238
+         2    0.142857
+         3    0.095238
+         4    0.000000
+         5    0.047619
+         6    0.047619
+         7    0.000000

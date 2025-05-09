@@ -8,7 +8,7 @@
 *.tpr*
 *.str*
 *.ndx*
-*.xvg*
+*.xvg*#*
 *.json*
 *.md
 *.synctex.gz

@@ -1,0 +1,38 @@
+# This file was created Sat Mar 29 22:54:33 2025
+# Created by:
+#                      :-) GROMACS - gmx angle, 2024.5 (-:
+# 
+# Executable:   C:\Gromacs\GMX\bin\gmx.exe
+# Data prefix:  C:\Gromacs\GMX
+# Working dir:  C:\Repo\Opsin-Design\MD\QTY-wrong-dihedral
+# Command line:
+#   gmx angle -f mdcis.xtc -n index.ndx -od dihedral2.xvg -type dihedral
+# gmx angle is part of G R O M A C S:
+#
+# Glycine aRginine prOline Methionine Alanine Cystine Serine
+#
+@    title "Dihedral Distribution: a_5325_a_5315_a_5316_a_5317"
+@    xaxis  label "Degrees"
+@    yaxis  label ""
+@TYPE xy
+@    subtitle "average angle: 0.487007\So\N"
+        -8    0.000000
+        -7    0.029703
+        -6    0.039604
+        -5    0.049505
+        -4    0.029703
+        -3    0.039604
+        -2    0.059406
+        -1    0.148515
+         0    0.089109
+         1    0.128713
+         2    0.069307
+         3    0.148515
+         4    0.059406
+         5    0.039604
+         6    0.009901
+         7    0.039604
+         8    0.009901
+         9    0.000000
+        10    0.009901
+        11    0.000000

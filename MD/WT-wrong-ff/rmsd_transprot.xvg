@@ -1,0 +1,29 @@
+# This file was created Thu Apr 10 17:56:56 2025
+# Created by:
+#                       :-) GROMACS - gmx rms, 2024.5 (-:
+# 
+# Executable:   C:\Gromacs\GMX\bin\gmx.exe
+# Data prefix:  C:\Gromacs\GMX
+# Working dir:  C:\Repo\Rhodopsins_QTY\MD\WT
+# Command line:
+#   gmx rms -s trans6.0.tpr -f trans7_center.xtc -tu ns -o rmsd_transprot.xvg
+# gmx rms is part of G R O M A C S:
+#
+# Gromacs Runs One Microsecond At Cannonball Speeds
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Protein after lsq fit to Backbone"
+   0.0000000    0.1015158
+   5.0000000    0.1687863
+  10.0000000    0.2185537
+  15.0000010    0.2261610
+  20.0000000    0.2843725
+  25.0000019    0.2621581
+  30.0000019    0.2294832
+  35.0000000    0.2369315
+  40.0000000    0.2181927
+  45.0000038    0.2432738
+  50.0000038    0.2331659
