@@ -45,7 +45,7 @@ for protein in ["qty", "wt"]:
     y_hbond = hbond_data[:, 1]
     x_hbond_avg, y_hbond_avg = compute_running_avg(x_hbond, y_hbond)
 
-    fig, ax1 = plt.subplots(figsize=(4, 2.5))
+    fig, ax1 = plt.subplots(figsize=(4.5, 2.25))
     ax2 = ax1.twinx()
 
     ax1.plot(x_hbond_avg, y_hbond_avg, color="blue", label="Number of hydrogen bonds (1ns running avg.)", linewidth=0.75)

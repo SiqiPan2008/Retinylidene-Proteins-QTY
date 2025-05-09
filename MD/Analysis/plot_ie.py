@@ -40,7 +40,7 @@ for protein in ["qty", "wt"]:
     #data_temp.append(np.concatenate((cis_data, trans_data), axis=0))
     data = np.concatenate(data_temp, axis=0)
     
-    fig, ax = plt.subplots(figsize=(4, 5))
+    fig, ax = plt.subplots(figsize=(4.5, 4))
     vmax = np.max(np.abs(data))
     cax = ax.imshow(data, aspect="auto", cmap="RdBu_r", vmin=-vmax, vmax=vmax, origin="lower", interpolation="nearest")
     ax.set_xlabel("Time (ns)")
