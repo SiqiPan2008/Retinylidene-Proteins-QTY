@@ -93,7 +93,7 @@ We used PyMOL (\url{https://pymol.org}) to superpose the native predicted protei
 
 \subsection*{Molecular dynamics simulations}
 
-All MD simulations and analyses were executed on a desktop computer with Intel Xeon Platinum 8352V Processor, 256 GB RAM, and 2 NVIDIA GPU (GeForce RTX 4090) with 24 GB VRAM each. All MD simulations were conducted using GROMACS 2024.5 \citep{Abraham_2015} with the CHARMM36m all-atom force field \citep{Huang_2017}. Data for retinal were obtained from NAMD Wiki (\url{https://www.ks.uiuc.edu/Research/namd/wiki/index.cgi?RetinalTop} for topology and \url{https://www.ks.uiuc.edu/Research/namd/wiki/index.cgi?RetinalPar} for parameters) and manually integrated into the protein file. Initial structures, configuration files, and command-line codes for the simulations are publicly available at... [ONLINE DATABASE TO BE PREPARED]. 
+All MD simulations and analyses were executed on a desktop computer with Intel Xeon Platinum 8352V Processor, 256 GB RAM, and 2 NVIDIA GPU (GeForce RTX 4090) with 24 GB VRAM each. All MD simulations were conducted using GROMACS 2024.5 \citep{Abraham_2015} with the CHARMM36m all-atom force field \citep{Huang_2017}. Data for retinal were obtained from NAMD Wiki (\url{https://www.ks.uiuc.edu/Research/namd/wiki/index.cgi?RetinalTop} for topology and \url{https://www.ks.uiuc.edu/Research/namd/wiki/index.cgi?RetinalPar} for parameters) and manually integrated into the protein file. Initial structures, configuration files, and command-line codes for the simulations are publicly available on Zenodo (\url{https://doi.org/10.5281/zenodo.15377505}). 
 
 Regarding native OPN2, the membrane protein system was constructed using the web-based membrane builder CHARMM-GUI and was downloaded in GROMACS format \citep{Jo_2008, Wu_2014, Lee_2016}. The protein was centered in a rectangular box. The generated membrane models consisted of 40\% POPC, 40\% POPE, 10\% POPS, and 10\% cholesterol, which simulate a rod photoreceptor disk membrane \citep{Albert_2005}. The system was solvated in TIP3P water with 150 mM NaCl. 11-cis-retinal was manually added to the protein files. LINCS constraints were used for constraints, and Verlet integrator was used. Electrostatics was handled with Particle Mesh Ewald (PME), with both Coulomb and van der Waals interaction cutoffs set at 1.2 nm. The energy of the system was minimized using the steepest descent until the maximum forces converged below 1000 kJ/mol/nm. The standard six-step CHARMM-GUI NP$\gamma$T equilibration protocol \citep{Jo_2008} was used, with two 125-ps NVT equilibration simulations, and one 125-ps and three 500-ps NP$\gamma$T equilibration simulations. Temperature and pressure were maintained at 303.15 K and 1.0 bar, respectively, using the V-rescale thermostat and C-rescale barostat with surface-tension coupling. Following equilibration, a 10-ns production MD simulation was run. The retinal molecule was then manually switched to the all-trans state by rotating C13 to C15 and bonded hydrogen and methyl groups by 180 degrees around the C11-C12 bond. Energy minimization and equilibration were repeated exactly as before, and then a 120-ns production MD simulation was run. 
 
@@ -123,11 +123,9 @@ We used AlphaFold3 to predict the structure of monomers of the 3 native microbia
 
 \subsection*{Analysis of the hydrophobic surface of native retinylidene proteins and their water-soluble QTY variants}
 
-Describe and discuss Figure~\ref{fig:hydrophobicity} (surface hydrophobicity). 
-
 As transmembrane proteins, retinylidene proteins require detergents to be separated from the lipid bilayer. The detergents act as an interface between the hydrophobic transmembrane domain of the protein and the surrounding water, thus solubilizing the protein. If these proteins are exposed in water without detergents, their hydrophobicity will induce them to aggregate and precipitate, with their structures and functions disrupted. 
 
-The hydrophobic portions of the protein surface are represented in yellow (Figure 5). In the native proteins, there are large hydrophobic patches in the transmembrane domains, which are embedded within the lipid bilayer. The nonpolar and hydrophobic amino acids including leucine (L), isoleucine (I), valine (V), phenylalanine (F), alanine (A), methionine (M), and tryptophan (W) interact with the hydrophobic hydrocarbon chains and expel water. 
+The hydrophobic portions of the protein surface are represented in yellow (Figure~\ref{fig:hydrophobicity}). In the native proteins, there are large hydrophobic patches in the transmembrane domains, which are embedded within the lipid bilayer. The nonpolar and hydrophobic amino acids including leucine (L), isoleucine (I), valine (V), phenylalanine (F), alanine (A), methionine (M), and tryptophan (W) interact with the hydrophobic hydrocarbon chains and expel water. 
 
 We investigate the surface hydrophobicity of water-soluble QTY-analogs in comparison with the native proteins. After applying the QTY code to respectively replace the hydrophobic amino acids L, I/V, and F with hydrophilic amino acids glutamine (Q), threonine (T), and tyrosine (Y), the hydrophobic surface areas are significantly reduced. More importantly, since the electron density maps of the corresponding amino acids are similar, the alpha helices in QTY analogs have a similar contour to those in the native proteins. The QTY analogs have successfully retained its structural integrity and stability. 
 
@@ -166,13 +164,9 @@ Last but not least, water-soluble opsins have the potential to be harvested in m
 In this study, we selected 12 retinylidene proteins, including 9 human opsins (OPN1MW, OPN1LW, OPN1SW, OPN2, OPN3, OPN4, OPN5, RGR, and RRH) and 3 microbial opsins (BACR, BACH, and ChR2), that have clinical implications and various applications. We applied the QTY code to convert the hydrophobic transmembrane alpha-helices into hydrophilic ones and thus create water-soluble QTY analogs of the proteins. Then, we used AlphaFold3 to predict the structures of the native proteins as well as the QTY analogs, superposed them, and found that the structure of the proteins are well conserved despite substantial residue substitutions. We also inspected the surface hydrophobicity of the proteins and found a great decrease in hydrophobic patches in the transmembrane surface. Next, we chose a representative retinylidene protein, OPN2, and employed molecular dynamics simulations to investigate the behavior of native and QTY analog of OPN2. We found that the QTY analog is capable of conformational change and effective protein-ligand interaction. These findings reveal that QTY-designed OPN2, and retinylidene proteins in general, may have conserved structure and function. We believe that these water-soluble QTY variants may have potentials in research, therapeutic treatments, and bioengineering. 
 
 
-\section*{Supplementary Material}
-
-The supplementary material can be found at... [TO BE ADDED]
-
 \section*{Data Availability Statement} 
 
-The data for... can be found at... [ONLINE DATABASE TO BE PREPARED]
+The data for the AlphaFold3-predicted structures and MD simulation setting files and commands can be found on Zenodo (\url{https://doi.org/10.5281/zenodo.15377505}). 
 
 \section*{Author contributions}
 
@@ -181,11 +175,6 @@ Conceptualization: S.P., S.Z.; Formal analysis: S.P.; Investigation: Methodology
 \section*{Financial Support}
 
 There is no financial support for this digital bioinformatics study. We only used free tools that are publicly available. 
-
-\section*{Acknowledgments}
-
-Thanks to... for... [TO BE ADDED]
-
 
 \section*{Competing Interests}
 
@@ -289,14 +278,17 @@ All methods were carried out in accordance with relevant guidelines and regulati
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/function-conformation.jpg}
-	\caption{\textbf{The conformational changes of native OPN2 and its QTY analog before and after 11-cis to all-trans isomerization of the chromophore, retinal. } \textbf{a)} and \textbf{b)}: 1ns running averages of the root mean square distances (RMSD) of the protein-retinal complex, transmembrane helix 6 (TM6), the retinal-binding pocket, and retinal. \textbf{c)}: superpositions between cis-state OPN2, trans-state OPN2, cis-state OPN2$^{\textrm{QTY}}$, and trans-state OPN2$^{\textrm{QTY}}$. Blue: cis-state protein, orange: 11-cis-retinal; yellow: trans-state protein, greenish cyan: all-trans retinal. }
+	\caption{\textbf{The conformational changes of native OPN2 and its QTY analog before and after 11-cis to all-trans isomerization of the chromophore, retinal. } \textbf{a)} and \textbf{b)}: 1ns running averages of the root mean square distances (RMSD) of the protein-retinal complex, transmembrane helix 6 (TM6), the retinal-binding pocket, and retinal. By convention, the isomerization is set at time 0ns, which is indicated by a brown, vertical dashed line. \textbf{c)}: superpositions between cis-state OPN2, trans-state OPN2, cis-state OPN2$^{\textrm{QTY}}$, and trans-state OPN2$^{\textrm{QTY}}$. Blue: cis-state protein, orange: 11-cis-retinal; yellow: trans-state protein, greenish cyan: all-trans retinal. }
 	\label{fig:conformation}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/function-binding.jpg}
-	\caption{\textbf{Changes in the retinal-binding pocket and protein-ligand interaction in native OPN2 and its QTY analog before and after 11-cis to all-trans isomerization of the chromophore. } \textbf{a)} and \textbf{b)}: close-ups of the binding pocket in cis-state. Blue: protein residues, orange: 11-cis-retinal; dashed lines: same as a) and b). \textbf{c)} and \textbf{d)}: close-ups of the binding pocket in trans-state. Yellow: protein residues, greenish cyan: all-trans-retinal; green dashed lines: ion bridge; yellow dashed lines: van der Waals and/or hydrophobic interactions. \textbf{e)} and \textbf{f)}: the interaction energies between the protein, the binding pocket, individual residues, and retinal. The interaction energy is the sum of the short-range Coulombic interaction energy and short-range Lennard-Jones energy. Please note that the interaction energy is a product of MD simulation and is not necessarily a meaningful physical quantity. \textbf{g)} and \textbf{h)}: the number of hydrogen bonds formed between residues in the binding pocket, and the number of water molecules within the binding pocket. }
+\end{figure}
+
+\begin{figure}[htbp]
+	\caption{\textbf{Changes in the retinal-binding pocket and protein-ligand interaction in native OPN2 and its QTY analog before and after 11-cis to all-trans isomerization of the chromophore. } \textbf{a)} and \textbf{b)}: close-ups of the binding pocket in cis-state. Blue: protein residues, orange: 11-cis-retinal; dashed lines: same as a) and b). \textbf{c)} and \textbf{d)}: close-ups of the binding pocket in trans-state. Yellow: protein residues, greenish cyan: all-trans-retinal; green dashed lines: ion bridge; yellow dashed lines: van der Waals and/or hydrophobic interactions. \textbf{e)} and \textbf{f)}: the interaction energies between the protein, the binding pocket, individual residues, and retinal. The interaction energy is the sum of the short-range Coulombic interaction energy and short-range Lennard-Jones energy. Please note that the interaction energy is a product of MD simulation and is not necessarily a meaningful physical quantity. \textbf{g)} and \textbf{h)}: the number of hydrogen bonds formed between residues in the binding pocket, and the number of water molecules within the binding pocket. By convention, the isomerization is set at time 0ns, which is indicated by a brown, vertical dashed line. }
 	\label{fig:binding}
 \end{figure}
 
