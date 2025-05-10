@@ -2,14 +2,14 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: PS (-1)
 ;	On host: JERRY-WORKSTATI
-;	At date: Sat May 10 17:14:32 2025
+;	At date: Sat May 10 21:44:39 2025
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2024.5 (-:
 ;	
 ;	Executable:   C:\Gromacs\GMX\bin\gmx.exe
 ;	Data prefix:  C:\Gromacs\GMX
-;	Working dir:  C:\Repo\Rhodopsins_QTY\MD\Analysis
+;	Working dir:  C:\Repo\Retinylidene-Proteins-QTY\MD\Analysis
 ;	Command line:
 ;	  gmx grompp -f qty_trans_ie_prot.mdp -c qty_trans.gro -t qty_trans.cpt -p qty_trans.top -n qty_trans.ndx -o qty_trans_ie_prot.tpr
 
@@ -175,7 +175,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen-seed                 = 1031258110
+gen-seed                 = -1482301654
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
