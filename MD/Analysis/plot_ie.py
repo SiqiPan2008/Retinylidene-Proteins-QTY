@@ -27,22 +27,23 @@ targetname = "ie"
 resids = [265, 113, 181, 268, 207, 186, 191, 187, 188, 189, 117, 292, 212, 295, 208]
 resnames = [int(resid) for resid in resids]
 groups = ["prot", "pocket"]
+data = {"qty": 0, "wt": 0}
 for protein in ["qty", "wt"]:
     data_temp = []
     for group in groups:
         cis_data = load_xvg_ie(f"{protein}_cis_{targetname}_{group}.xvg", byres=False)
-        data_temp.append(cis_data)
-        #trans_data = load_xvg_ie(f"{protein}_trans_{targetname}_{group}.xvg"， byres=False)
-        #data_temp.append(np.concatenate((cis_data, trans_data), axis=0))
+        trans_data = load_xvg_ie(f"{protein}_trans_{targetname}_{group}.xvg", byres=False)
+        data_temp.append(np.concatenate((cis_data, trans_data), axis=1))
     cis_data = load_xvg_ie(f"{protein}_cis_{targetname}_byres.xvg", byres=True)
-    data_temp.append(cis_data)
-    #trans_data = load_xvg_ie(f"{protein}_trans_{targetname}_byres.xvg", byres=True)
-    #data_temp.append(np.concatenate((cis_data, trans_data), axis=0))
-    data = np.concatenate(data_temp, axis=0)
-    
+    trans_data = load_xvg_ie(f"{protein}_trans_{targetname}_byres.xvg", byres=True)
+    data_temp.append(np.concatenate((cis_data, trans_data), axis=1))
+    data[protein] = np.concatenate(data_temp, axis=0)
+    data[protein] = np.sign(data[protein]) * np.log1p(np.abs(data[protein]))
+
+vmax = max(np.max(np.abs(data["qty"])), np.max(np.abs(data["wt"])))
+for protein in ["qty", "wt"]:
     fig, ax = plt.subplots(figsize=(4.5, 4))
-    vmax = np.max(np.abs(data))
-    cax = ax.imshow(data, aspect="auto", cmap="RdBu_r", vmin=-vmax, vmax=vmax, origin="lower", interpolation="nearest")
+    cax = ax.imshow(data[protein], aspect="auto", cmap="RdBu_r", vmin=-vmax, vmax=vmax, origin="lower", interpolation="nearest")
     ax.set_xlabel("Time (ns)")
     ax.set_ylabel("")
     ax.set_yticks(range(17))
