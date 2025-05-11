@@ -39,8 +39,10 @@
                 labelsep=period,%
                 justification=raggedright]{caption}
                 
-\RequirePackage[numbers]{natbib}
-\bibliographystyle{vancouver}
+\RequirePackage[]{natbib}
+\bibliographystyle{apalike}
+%\RequirePackage[numbers]{natbib}
+%\bibliographystyle{vancouver}
 
 %
 % writeLaTeX logo
