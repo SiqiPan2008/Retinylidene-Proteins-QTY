@@ -18,7 +18,7 @@
 
 \corrauthor[1]{Siqi Pan}{siqipan2008@outlook.com}
 
-\keywords{hydrophobic to hydrophilic conversion; membrane proteins; protein design; QTY code; water-soluble retinylidene proteins; water-soluble opsins; activation of QTY variants of rhodopsin}
+\keywords{bioinformatics; computational studies on functional properties of biological molecule; GPCRs; membrane protein structure; protein dynamics simulation}
 \begin{abstract}
 
 Retinylidene proteins are retinal-binding light-sensitive proteins found in organisms ranging from microbes to human. Microbial opsins have been utilized in optogenetics, while animal opsins are essential for vision and light-dependent metabolic functions. However, retinylidene proteins have hydrophobic transmembrane (TM) domains, which makes them challenging to study. In this structural and functional bioinformatics study, we used the QTY (Glutamine, Threonine, Tyrosine) code to design water-soluble QTY analogs of retinylidene proteins, including 9 human and 3 microbial opsins. We provide superpositions of the AlphaFold3-predicted hydrophobic native proteins and their water-soluble QTY analogs, and experimentally-determined structures when available. We also provide a comparison of surface hydrophobicity of the variants. Despite significant changes to the protein sequence (35.53\% to 50.24\% in the TM domain), protein characteristics and structures are well-preserved. Furthermore, we run molecular dynamics (MD) simulations of native and QTY-designed OPN2 (rhodopsin) and analyze their response to the isomerization of 11-cis-retinal to all-trans-retinal. The results show that the QTY analog has similar functional behavior to the native protein. The findings of this study indicate that the QTY code can be used as a robust tool to design water-solubility retinylidene proteins. These have potential applications in protein studies, therapeutic treatments, and bioengineering. 
@@ -180,11 +180,11 @@ S.P. thanks Prof. Shuguang Zhang of the Lab of Molecular Architecture, Media Lab
 
 \section*{Financial Support}
 
-There is no financial support for this digital bioinformatics study. We only used free tools that are publicly available. 
+There is no financial support for this digital bioinformatics study. I only used free tools that are publicly available. 
 
 \section*{Competing Interests}
 
-Massachusetts Institute of Technology (MIT) filed several patent applications for the QTY code for GPCRs excluding the human opsins. OH2Laboratories licensed the technology from MIT to work on water-soluble GPCR variants. S.Z. is an inventor of the QTY code and has a minor equity in OH2Laboratories. S.Z. is a Scientific Advisor and has minor shares for a startup RealNose to develop a sensing device based on olfactory receptors. S.Z. founded a startup 511 Therapeutics to generate therapeutic monoclonal antibodies against solute carrier transporters to treat pancreatic cancer. S.Z. has majority equity in 511 Therapeutics. All other authors have no competing interests.
+Massachusetts Institute of Technology (MIT) filed several patent applications for the QTY code for GPCRs, which do not include the human opsins. There are no competing interests.
 
 
 \section*{Ethics Statement}
@@ -198,13 +198,13 @@ All methods were carried out in accordance with relevant guidelines and regulati
 	\centering
 	\caption{\textbf{Protein characteristics of 12 retinylidene proteins and their QTY analogs. } Blue: human opsins; purple: microbial opsins. RMSD: root mean square distance; pI: isoelectric focusing; MW: molecular weight; TM: transmembrane. }
 	\label{tb:characteristics}
-	\includegraphics[width=\linewidth]{Table1.jpg}
+	\includegraphics[width=\linewidth]{Figures/characteristics.jpg}
 \end{table}
 
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=\linewidth]{Figure1.jpg}
+	\includegraphics[width=\linewidth]{Figures/sequences.jpg}
 	\caption{\textbf{The protein sequence alignments of 12 retinylidene proteins and their QTY analogs. } Blue: human opsins; purple: microbial opsins. The symbols $|$ and $*$ indicate that amino acids are identical or different, respectively. Amino acids L, I/V, and F in TM (transmembrane) alpha helices (shown in blue above the sequences) are replaced with Q, T, and Y respectively. The variation in the TM domain ranges from 35.53\% to 50.24\% while the overall variation rate ranges from 15.48\% to 30.04\%. The characteristics of the proteins are shown above the sequences. Despite large variation rates, the pI only experiences a slight change between 0.00 and 0.16 and the MW increases slightly by a value between 0.04kDa and 0.60kDa. The enlarged individual sequence alignments are available in Supplementary Information. 
     The alignments are 
     \textbf{a)} OPN1MW \textit{vs} OPN1MW$^{\textrm{QTY}}$, 
@@ -224,7 +224,7 @@ All methods were carried out in accordance with relevant guidelines and regulati
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=\linewidth]{Figure2.jpg}
+	\includegraphics[width=\linewidth]{Figures/superposition-human-pairwise.jpg}
 	\caption{\textbf{Superposition of AlphaFold3-predicted native human retinylidene proteins, their QTY analogs, and experimentally determined structures. } For clarity, unstructured N- and C- terminal ends are deleted. 
     For \textbf{a)} to \textbf{i)}, despite significant changes in the protein sequence, the structures superpose very well. The root mean square distance (RMSD) values are quite small, from 0.307{\AA} to 0.611\AA, with only one exception (OPN2$^{\textrm{QTY}}$ \textit{vs} OPN2$^{\textrm{EXP}}$, RMSD = 0.999\AA). Green: AlphaFold3-predicted native structure; cyan: AlphaFold3-predicted QTY analog structure; magenta: experimentally determined structure. The superpositions are 
     \textbf{a)} OPN1MW$^{\textrm{AF3}}$ \textit{vs} OPN1MW$^{\textrm{QTY}}$, 
@@ -245,7 +245,7 @@ All methods were carried out in accordance with relevant guidelines and regulati
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=\linewidth]{Figure3.jpg}
+	\includegraphics[width=\linewidth]{Figures/superposition-microbial.jpg}
 	\caption{\textbf{Superposition of AlphaFold3-predicted native microbial retinylidene proteins, their QTY analogs, and experimentally determined structures. } Despite significant changes in the protein sequence, the structures superpose very well. The root mean square distance (RMSD) values are quite small, with the highest being 0.685\AA. For clarity, unstructured N- and C- terminal ends are deleted. 
     Green: AlphaFold3-predicted native structure; cyan: AlphaFold3-predicted QTY analog structure; magenta: experimentally determined structure. 
     The superpositions are 
@@ -260,7 +260,7 @@ All methods were carried out in accordance with relevant guidelines and regulati
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=\linewidth]{Figure4.jpg}
+	\includegraphics[width=\linewidth]{Figures/hydrophobicity.jpg}
 	\caption{\textbf{Hydrophobic surface of 12 retinylidene proteins and their water-soluble QTY analogs. } Hydrophobic patches are shown in yellow while hydrophilic patches are shown in cyan. The native proteins have many hydrophobic patches due to the presence of hydrophobic amino acids, including L, I, V, and F. After QTY substitution, hydrophilic Q, T, and Y have respectively replaced hydrophobic L, I/V, and F, and the hydrophobic patches in the surface of transmembrane helices have become more hydrophilic. In addition, the surface shape of the native and QTY analogs are very similar. For clarity, unstructured N- and C- terminal ends are deleted. 
     The comparisons are 
     \textbf{a)} OPN1MW \textit{vs} OPN1MW$^{\textrm{QTY}}$, 
@@ -284,14 +284,17 @@ All methods were carried out in accordance with relevant guidelines and regulati
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=\linewidth]{Figure5.jpg}
+	\includegraphics[width=\linewidth]{Figures/function-conformation.jpg}
 	\caption{\textbf{The conformational changes of native OPN2 and its QTY analog before and after 11-cis to all-trans isomerization of the chromophore, retinal. } \textbf{a)} and \textbf{b)}: 1ns running averages of the root mean square distances (RMSD) of the protein-retinal complex, transmembrane helix 6 (TM6), the retinal-binding pocket, and retinal. By convention, the isomerization is set at time 0ns, which is indicated by a brown, vertical dashed line. \textbf{c)}: superpositions between cis-state OPN2, trans-state OPN2, cis-state OPN2$^{\textrm{QTY}}$, and trans-state OPN2$^{\textrm{QTY}}$. Both OPN2 and OPN2$^{\textrm{QTY}}$ exhibit conformational changes, with RMSDs greater than 2\AA. Blue: cis-state protein, orange: 11-cis-retinal; yellow: trans-state protein, greenish cyan: all-trans retinal. }
 	\label{fig:conformation}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=\linewidth]{Figure6.jpg}
+	\includegraphics[width=\linewidth]{Figures/function-binding.jpg}
+\end{figure}
+
+\begin{figure}[htbp]
 	\caption{\textbf{Changes in the retinal-binding pocket and protein-ligand interaction in native OPN2 and its QTY analog before and after 11-cis to all-trans isomerization of the chromophore. } \textbf{a)} and \textbf{b)}: close-ups of the binding pocket in cis-state. Protein-ligand interactions with lengths shorter or equal to 3.5\AA are shown in the figure. Blue: protein residues, orange: 11-cis-retinal; green dashed lines: ion bridge; yellow dashed lines: van der Waals and/or hydrophobic interactions. \textbf{c)} and \textbf{d)}: close-ups of the binding pocket in trans-state. Protein-ligand interactions with lengths shorter or equal to 3.5\AA are shown in the figure. Yellow: protein residues, greenish cyan: all-trans-retinal; green dashed lines: ion bridge; yellow dashed lines: van der Waals and/or hydrophobic interactions. \textbf{e)} and \textbf{f)}: the interaction energies (IE) between the protein, the binding pocket, individual residues, and retinal. IE is the sum of the short-range Coulombic interaction energy and short-range Lennard-Jones energy. Please note that IE is a product of MD simulation and is not necessarily a ``real'' physical quantity. For clarity, IE is rescaled using the signed pseudo logarithm ($y = \textrm{sign}(x)\cdot\ln(|x|+1)$). By convention, the isomerization is set at time 0ns, which is indicated by a brown, vertical dashed line. The large changes in IE in OPN2 around $t=50$ns are due to the entrance of water molecules into the binding pocket, near 113E. The QTY analog has more negative IE at residues 208 and 212 due to F to Y substitutions. Besides from these, the similarity between the IE of OPN2 and OPN2$^{\textrm{QTY}}$ is a strong suggestion of functional conservation. \textbf{g)} and \textbf{h)}: the number of hydrogen bonds formed between residues in the binding pocket, and the number of water molecules within the binding pocket. By convention, the isomerization is set at time 0ns, which is indicated by a brown, vertical dashed line. }
 	\label{fig:binding}
 \end{figure}
