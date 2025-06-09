@@ -1,0 +1,18 @@
+Dear Editor and Reviewers, 
+
+Thank you very much for reading and reviewing my manuscript. I have revised it according to your comments, and these are my responses:
+
+1. I added background information on the downstream signaling pathways of OPN2 in "Introduction". I also added some discussion on why OPN2-QTY has potential applications for treatment of related diseases in "Future scopes and potential applications" under "Results and Discussions". 
+
+2. Apart from structural analysis, the analysis of the MD simulation has already included a functional analysis of the binding pocket, including by-residue distance from ligand and interaction energy. With respect to the question about how the MD setup relates to real physiological processes, I added a description in "Molecular dynamics simulation" under "Methods", in which I justified how the lipid membrane composition and ionic choice simulates the in vivo environment.
+
+3. The fluctuation of the RMSD was expected in this MD simulation. For clarification, I wrote the following in "Results and Discussion": "Please note that my aim is not to simulate the whole photocycle of OPN2, which takes longer than 1ms (Fanelli et al., 2021), but rather to find proof that the QTY analog conserves the function of being activated by isomerization of retinal.", and "It may be noted that the RMSD was still fluctuating, which means that the protein had not yet stabilized. This was expected, since the OPN2 was still in the process of transition from BATH to LUMI state, and this provided evidence for the activation of the protein in response to isomerization of retinal."
+
+4. The reverse-QTY design mentioned at the end of the introduction is not very relevant to this specific study and so it has been deleted.
+
+5. I have checked the citation formats and made sure that there were no incomplete or illegible citations.
+
+6. I have revised the grammar, especially the uses of past and present tenses. 
+
+Sincerely,
+Siqi Pan
